@@ -24,34 +24,37 @@ def _norm(txt: str) -> str:
 
 def _to_num(s: str):
     """Convierte '64,050.00' o '64.05' a float y corrige magnitudes absurdas (e.g., 6405000 -> 64.05)."""
-    raw = re.sub(r"[^0-9\.,]", "", (s or ""))
+    if not s:
+        return None
+    # Limpia espacios, NBSP y símbolos de moneda
+    raw = s.replace("\xa0", "").replace("RD$", "").replace("$", "")
+    raw = raw.replace("DOP", "").replace("US$", "").replace("€", "")
+    raw = raw.strip()
+
+    # Elimina cualquier caracter no numérico salvo punto y coma
+    raw = re.sub(r"[^0-9\.,]", "", raw)
+
     if not raw:
         return None
 
-    n = None
-    if "." in raw and "," in raw:
-        # caso "64,050.00": quitar separador de miles (,) y dejar punto decimal
+    # Caso típico: "64,050.00" → quitar comas
+    if "," in raw and "." in raw:
         try:
-            n = float(raw.replace(",", ""))
+            return float(raw.replace(",", ""))
         except:
-            n = None
-    else:
+            pass
+    # Si solo hay comas → tratarlas como punto decimal
+    if "," in raw and "." not in raw:
         try:
-            n = float(raw.replace(",", "."))
+            return float(raw.replace(",", "."))
         except:
-            n = None
-    if n is None:
+            pass
+    # Si solo hay punto
+    try:
+        return float(raw)
+    except:
         return None
-
-    # Corrige si vienen 3-5 dígitos extras por error de scraping/HTML
-    if n > 1000:
-        if 100000 <= n < 10000000:
-            n = n / 100000.0
-        elif 10000 <= n < 100000:
-            n = n / 1000.0
-
-    return round(n, 4)
-
+        
 def find_updated_text(soup: BeautifulSoup) -> str | None:
     for t in soup.find_all(string=True):
         tt = _clean(t)
