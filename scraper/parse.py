@@ -23,38 +23,43 @@ def _norm(txt: str) -> str:
     return _clean(txt).lower()
 
 def _to_num(s: str):
-    """Convierte '64,050.00' o '64.05' a float y corrige magnitudes absurdas (e.g., 6405000 -> 64.05)."""
+    """Convierte strings de precio en float. Ej: '64,050.00' → 64050.00, corrige si hay magnitudes raras."""
     if not s:
         return None
-    # Limpia espacios, NBSP y símbolos de moneda
-    raw = s.replace("\xa0", "").replace("RD$", "").replace("$", "")
-    raw = raw.replace("DOP", "").replace("US$", "").replace("€", "")
-    raw = raw.strip()
 
-    # Elimina cualquier caracter no numérico salvo punto y coma
-    raw = re.sub(r"[^0-9\.,]", "", raw)
-
+    # Quita caracteres no numéricos (mantén . y ,)
+    raw = re.sub(r"[^0-9\.,]", "", s)
     if not raw:
         return None
 
-    # Caso típico: "64,050.00" → quitar comas
+    n = None
+    # Caso "64,050.00" → quita comas
     if "," in raw and "." in raw:
         try:
-            return float(raw.replace(",", ""))
+            n = float(raw.replace(",", ""))
         except:
-            pass
-    # Si solo hay comas → tratarlas como punto decimal
-    if "," in raw and "." not in raw:
+            return None
+    # Caso "64,05" → usa coma como decimal
+    elif "," in raw and "." not in raw:
         try:
-            return float(raw.replace(",", "."))
+            n = float(raw.replace(",", "."))
         except:
-            pass
-    # Si solo hay punto
-    try:
-        return float(raw)
-    except:
-        return None
-        
+            return None
+    else:
+        try:
+            n = float(raw)
+        except:
+            return None
+
+    # Corrige magnitudes (a veces viene 6405000 → 64.05)
+    if n > 1000:
+        if 100000 <= n < 10000000:
+            n = n / 100000.0
+        elif 10000 <= n < 100000:
+            n = n / 1000.0
+
+    return round(n, 2)
+    
 def find_updated_text(soup: BeautifulSoup) -> str | None:
     for t in soup.find_all(string=True):
         tt = _clean(t)
