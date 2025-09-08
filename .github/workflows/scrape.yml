@@ -1,22 +1,29 @@
 name: scrape-infodolar
+
 on:
   schedule:
-    - cron: "*/30 * * * *"
-  workflow_dispatch: {}
+    - cron: "*/30 * * * *"   # corre cada 30 minutos (UTC)
+  workflow_dispatch: {}       # para correrlo manualmente
+
 permissions:
-  contents: write
+  contents: write             # permite commitear data/ y history/
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install deps
-        run: pip install -r requirements.txt
+        run: pip install beautifulsoup4
+
       - name: Run scraper
         run: python scraper/main.py
+
       - name: Commit & push data
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
@@ -26,5 +33,5 @@ jobs:
             git commit -m "update rates [skip ci]"
             git push
           else
-            echo "No changes to commit"
+            echo "No hay cambios en data/ ni history/"
           fi
