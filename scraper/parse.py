@@ -1,3 +1,4 @@
+cat > scraper/parse.py <<'PY'
 import re
 from bs4 import BeautifulSoup
 
@@ -22,104 +23,96 @@ def _clean(txt: str) -> str:
 def _norm(txt: str) -> str:
     return _clean(txt).lower()
 
+def _fix_magnitude(n: float) -> float:
+    # Corrige cuando el número llega como 6405000.00 en vez de 64.05
+    if n > 1000:
+        if 100000 <= n < 10000000:
+            n /= 100000.0
+        elif 10000 <= n < 100000:
+            n /= 1000.0
+    return n
+
 def _to_num(s: str):
-    # Deja solo dígitos, coma y punto
-    raw = re.sub(r"[^0-9\.,]", "", (s or ""))
+    """Convierte strings a float soportando '64,050.00', '64.05', 'RD$ 64.05'."""
+    if not s:
+        return None
+    raw = s.replace("\xa0", "")
+    raw = re.sub(r"[^\d\.,]", "", raw)  # deja solo dígitos . ,
     if not raw:
         return None
 
-    # Si hay ambos separadores, asumimos formato con miles y decimales
-    # Normalizamos a punto decimal.
-    if "." in raw and "," in raw:
-        # Detecta cuál parece miles (el que aparece primero y repetido)
-        # Caso típico RD: "64,050.00" -> quitar comas, mantener punto
-        raw = raw.replace(",", "")
+    # Caso '64,050.00' (coma miles + punto decimal)
+    if "," in raw and "." in raw:
         try:
-            n = float(raw)
+            n = float(raw.replace(",", ""))
+            return round(_fix_magnitude(n), 2)
         except:
-            n = None
-    else:
-        # Solo uno de los separadores
+            pass
+    # Caso '64,05' (coma decimal)
+    if "," in raw and "." not in raw:
         try:
             n = float(raw.replace(",", "."))
+            return round(_fix_magnitude(n), 2)
         except:
-            n = None
-
-    if n is None:
+            pass
+    # Caso '64.05'
+    try:
+        n = float(raw)
+        return round(_fix_magnitude(n), 2)
+    except:
         return None
 
-    # Corregir magnitud absurda (p. ej. 6405000.00 => 64.05)
-    if n > 1000:
-        # si tiene más de 3 dígitos extra, divide por 100000
-        if n >= 100000 and n < 10000000:
-            n = n / 100000.0
-        elif n >= 10000 and n < 100000:
-            n = n / 1000.0
-
-    return round(n, 4)
 def find_updated_text(soup: BeautifulSoup) -> str | None:
     for t in soup.find_all(string=True):
         tt = _clean(t)
-        if tt.lower().startswith("actualizado") or "actualización" in tt.lower():
+        low = tt.lower()
+        if low.startswith("actualizado") or "actualización" in low or "actualizacion" in low:
             return tt
     return None
 
+def numbers_in_text(txt: str):
+    """
+    Devuelve todos los números tipo 64,050.00 | 64.05 | 64,05 presentes en el texto.
+    """
+    txt = txt.replace("\xa0", "")
+    # quita símbolos de moneda para no romper las capturas
+    txt = re.sub(r"(rd\$|us\$|dop|€)", "", txt, flags=re.IGNORECASE)
+    # captura secuencias con miles/decimales
+    candidates = re.findall(r"\d{1,3}(?:[\.,]\d{3})*(?:[\.,]\d{2})|\d+(?:[\.,]\d{2})", txt)
+    out = []
+    for c in candidates:
+        n = _to_num(c)
+        if n is not None:
+            out.append(n)
+    return out
+
 def parse_table(html: str, currency: str, source_url: str):
+    """
+    Estrategia robusta:
+    - Buscar todas las filas <tr> de las tablas.
+    - Para cada fila, si el texto contiene alguno de los bancos objetivo, extraer
+      los primeros 2 números de la fila (compra, venta).
+    """
     soup = BeautifulSoup(html, "html.parser")
     updated_text = find_updated_text(soup)
     rows_out = []
 
-    tables = soup.find_all("table")
-    for table in tables:
-        headers = []
-        thead = table.find("thead")
-        if thead:
-            ths = thead.find_all(["th", "td"])
-        else:
-            first_tr = table.find("tr")
-            ths = first_tr.find_all(["th", "td"]) if first_tr else []
-        for th in ths:
-            headers.append(_norm(th.get_text(" ")))
-
-        def idx_of(*alts):
-            for a in alts:
-                if a in headers:
-                    return headers.index(a)
-            for i, h in enumerate(headers):
-                if any(a in h for a in alts):
-                    return i
-            return None
-
-        idx_ent = idx_of("entidad", "banco", "agente", "casa de cambio")
-        idx_buy = idx_of("compra")
-        idx_sell = idx_of("venta")
-        if idx_ent is None or idx_buy is None or idx_sell is None:
-            continue
-
-        body_rows = table.find_all("tr")
-        if not body_rows:
-            continue
-        start = 1 if thead is None and len(body_rows) > 0 else 0
-
-        for tr in body_rows[start:]:
-            tds = tr.find_all(["td", "th"])
-            if len(tds) <= max(idx_ent, idx_buy, idx_sell):
-                continue
-            entidad = _clean(tds[idx_ent].get_text(" "))
-            buy_s  = _clean(tds[idx_buy].get_text(" "))
-            sell_s = _clean(tds[idx_sell].get_text(" "))
-
-            entity_norm = _norm(entidad)
+    # Recorre TODAS las filas de TODAS las tablas
+    for table in soup.find_all("table"):
+        for tr in table.find_all("tr"):
+            row_text = _clean(tr.get_text(" ", strip=True))
+            norm = _norm(row_text)
             matched_nice = None
             for key, nice in TARGET_BANKS.items():
-                if key in entity_norm:
+                if key in norm:
                     matched_nice = nice
                     break
             if not matched_nice:
                 continue
 
-            buy = _to_num(buy_s)
-            sell = _to_num(sell_s)
+            nums = numbers_in_text(row_text)
+            buy = nums[0] if len(nums) >= 1 else None
+            sell = nums[1] if len(nums) >= 2 else None
             spread = round(sell - buy, 2) if (buy is not None and sell is not None) else None
 
             rows_out.append({
@@ -132,4 +125,15 @@ def parse_table(html: str, currency: str, source_url: str):
                 "source": source_url
             })
 
-    return rows_out, updated_text
+    # Dedupe por banco (si la página repite tablas)
+    seen = set()
+    deduped = []
+    for r in rows_out:
+        k = (r["bank"], r["currency"])
+        if k in seen: 
+            continue
+        seen.add(k)
+        deduped.append(r)
+
+    return deduped, updated_text
+PY
