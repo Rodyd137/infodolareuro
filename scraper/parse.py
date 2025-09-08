@@ -23,66 +23,61 @@ def _norm(txt: str) -> str:
     return _clean(txt).lower()
 
 def _to_num(s: str):
-    """Convierte strings de precio en float. Ej: '64,050.00' → 64050.00, corrige si hay magnitudes raras."""
-    if not s:
-        return None
-
-    # Quita caracteres no numéricos (mantén . y ,)
-    raw = re.sub(r"[^0-9\.,]", "", s)
+    # Deja solo dígitos, coma y punto
+    raw = re.sub(r"[^0-9\.,]", "", (s or ""))
     if not raw:
         return None
 
-    n = None
-    # Caso "64,050.00" → quita comas
-    if "," in raw and "." in raw:
-        try:
-            n = float(raw.replace(",", ""))
-        except:
-            return None
-    # Caso "64,05" → usa coma como decimal
-    elif "," in raw and "." not in raw:
-        try:
-            n = float(raw.replace(",", "."))
-        except:
-            return None
-    else:
+    # Si hay ambos separadores, asumimos formato con miles y decimales
+    # Normalizamos a punto decimal.
+    if "." in raw and "," in raw:
+        # Detecta cuál parece miles (el que aparece primero y repetido)
+        # Caso típico RD: "64,050.00" -> quitar comas, mantener punto
+        raw = raw.replace(",", "")
         try:
             n = float(raw)
         except:
-            return None
+            n = None
+    else:
+        # Solo uno de los separadores
+        try:
+            n = float(raw.replace(",", "."))
+        except:
+            n = None
 
-    # Corrige magnitudes (a veces viene 6405000 → 64.05)
+    if n is None:
+        return None
+
+    # Corregir magnitud absurda (p. ej. 6405000.00 => 64.05)
     if n > 1000:
-        if 100000 <= n < 10000000:
+        # si tiene más de 3 dígitos extra, divide por 100000
+        if n >= 100000 and n < 10000000:
             n = n / 100000.0
-        elif 10000 <= n < 100000:
+        elif n >= 10000 and n < 100000:
             n = n / 1000.0
 
-    return round(n, 2)
-    
+    return round(n, 4)
 def find_updated_text(soup: BeautifulSoup) -> str | None:
     for t in soup.find_all(string=True):
         tt = _clean(t)
-        low = tt.lower()
-        if low.startswith("actualizado") or "actualización" in low or "actualizacion" in low:
+        if tt.lower().startswith("actualizado") or "actualización" in tt.lower():
             return tt
     return None
 
 def parse_table(html: str, currency: str, source_url: str):
-    """Devuelve (rows, updated_text). rows: [{bank,currency,buy,sell,spread,as_of_local,source}]"""
     soup = BeautifulSoup(html, "html.parser")
     updated_text = find_updated_text(soup)
     rows_out = []
 
-    for table in soup.find_all("table"):
-        # Headers
+    tables = soup.find_all("table")
+    for table in tables:
         headers = []
         thead = table.find("thead")
         if thead:
-            ths = thead.find_all(["th","td"])
+            ths = thead.find_all(["th", "td"])
         else:
             first_tr = table.find("tr")
-            ths = first_tr.find_all(["th","td"]) if first_tr else []
+            ths = first_tr.find_all(["th", "td"]) if first_tr else []
         for th in ths:
             headers.append(_norm(th.get_text(" ")))
 
@@ -90,23 +85,24 @@ def parse_table(html: str, currency: str, source_url: str):
             for a in alts:
                 if a in headers:
                     return headers.index(a)
-            for i,h in enumerate(headers):
+            for i, h in enumerate(headers):
                 if any(a in h for a in alts):
                     return i
             return None
 
-        idx_ent = idx_of("entidad","banco","agente","casa de cambio")
+        idx_ent = idx_of("entidad", "banco", "agente", "casa de cambio")
         idx_buy = idx_of("compra")
         idx_sell = idx_of("venta")
         if idx_ent is None or idx_buy is None or idx_sell is None:
             continue
 
-        rows = table.find_all("tr")
-        if not rows: continue
-        start = 1 if thead is None and len(rows) > 0 else 0
+        body_rows = table.find_all("tr")
+        if not body_rows:
+            continue
+        start = 1 if thead is None and len(body_rows) > 0 else 0
 
-        for tr in rows[start:]:
-            tds = tr.find_all(["td","th"])
+        for tr in body_rows[start:]:
+            tds = tr.find_all(["td", "th"])
             if len(tds) <= max(idx_ent, idx_buy, idx_sell):
                 continue
             entidad = _clean(tds[idx_ent].get_text(" "))
@@ -117,7 +113,8 @@ def parse_table(html: str, currency: str, source_url: str):
             matched_nice = None
             for key, nice in TARGET_BANKS.items():
                 if key in entity_norm:
-                    matched_nice = nice; break
+                    matched_nice = nice
+                    break
             if not matched_nice:
                 continue
 
