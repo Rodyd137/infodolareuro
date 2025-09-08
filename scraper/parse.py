@@ -110,6 +110,8 @@ def parse_table(html: str, currency: str, source_url: str):
                 continue
 
             nums = numbers_in_text(row_text)
+            # Filtra solo valores razonables (tasas reales, no variaciones u otros)
+            nums = [n for n in nums if 10 <= n <= 300]
             buy = nums[0] if len(nums) >= 1 else None
             sell = nums[1] if len(nums) >= 2 else None
             spread = round(sell - buy, 2) if (buy is not None and sell is not None) else None
