@@ -1,4 +1,3 @@
-cat > scraper/parse.py <<'PY'
 import re
 from bs4 import BeautifulSoup
 
@@ -136,4 +135,3 @@ def parse_table(html: str, currency: str, source_url: str):
         deduped.append(r)
 
     return deduped, updated_text
-PY
