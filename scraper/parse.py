@@ -29,7 +29,7 @@ def _to_num(s: str):
         return None
 
     # Si hay ambos separadores, asumimos formato con miles y decimales
-    # Normalizamos a punto decimal.
+    # Normalizamos a punto decimal
     if "." in raw and "," in raw:
         # Detecta cuál parece miles (el que aparece primero y repetido)
         # Caso típico RD: "64,050.00" -> quitar comas, mantener punto
