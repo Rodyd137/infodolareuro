@@ -23,7 +23,7 @@ def _norm(txt: str) -> str:
     return _clean(txt).lower()
 
 def _to_num(s: str):
-    # Deja solo dígitos, coma y punto
+    # Deja solo dígitos, coma y punto.
     raw = re.sub(r"[^0-9\.,]", "", (s or ""))
     if not raw:
         return None
