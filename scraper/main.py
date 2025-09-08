@@ -36,7 +36,7 @@ def main():
         items_map[key] = row
 
     data = {
-        "generated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+        "generated_at_utc": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
         "as_of_local_usd": ts_usd,
         "as_of_local_eur": ts_eur,
         "items": list(items_map.values()),
@@ -48,14 +48,14 @@ def main():
 
     with open("data/latest.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["bank","currency","buy","sell","spread","as_of_local","source"])
+        w.writerow(["bank", "currency", "buy", "sell", "spread", "as_of_local", "source"])
         for it in data["items"]:
             w.writerow([it["bank"], it["currency"], it["buy"], it["sell"], it["spread"], it["as_of_local"], it["source"]])
 
     ts = dt.datetime.now().strftime("%Y/%m/%d-%H%M")
     path = f"history/{ts}.json"
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path,"w",encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False)
 
 if __name__ == "__main__":
