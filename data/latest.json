@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-10T14:39:03Z",
+  "generated_at_utc": "2025-09-10T15:12:07Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -18,6 +18,15 @@
       "buy": 62.85,
       "sell": 63.85,
       "spread": 1.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 61.3,
+      "sell": 63.9,
+      "spread": 2.6,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -49,15 +58,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 61.3,
-      "sell": 64.1,
-      "spread": 2.8,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Caribe",
       "currency": "EUR",
       "buy": 72.4,
@@ -76,20 +76,20 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
+      "bank": "Banco BHD",
+      "currency": "EUR",
+      "buy": 72.5,
+      "sell": 77.1,
+      "spread": 4.6,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
       "bank": "Banco Vimenca",
       "currency": "EUR",
       "buy": 73.2,
       "sell": 77.5,
       "spread": 4.3,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
-      "bank": "Banco BHD",
-      "currency": "EUR",
-      "buy": 72.5,
-      "sell": 77.5,
-      "spread": 5.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
