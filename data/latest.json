@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-10T20:37:44Z",
+  "generated_at_utc": "2025-09-10T21:10:22Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,6 +22,15 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
+      "bank": "Banco Popular",
+      "currency": "USD",
+      "buy": 60.95,
+      "sell": 63.8,
+      "spread": 2.85,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
       "bank": "Banco Caribe",
       "currency": "USD",
       "buy": 62.85,
@@ -40,20 +49,11 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Popular",
-      "currency": "USD",
-      "buy": 61.05,
-      "sell": 63.9,
-      "spread": 2.85,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Vimenca",
       "currency": "USD",
-      "buy": 62.5,
-      "sell": 63.95,
-      "spread": 1.45,
+      "buy": 62.0,
+      "sell": 63.9,
+      "spread": 1.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -76,6 +76,15 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
+      "bank": "Banco Vimenca",
+      "currency": "EUR",
+      "buy": 72.0,
+      "sell": 77.0,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
       "bank": "Banco Popular",
       "currency": "EUR",
       "buy": 72.65,
@@ -90,15 +99,6 @@
       "buy": 72.1,
       "sell": 77.1,
       "spread": 5.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
-      "bank": "Banco Vimenca",
-      "currency": "EUR",
-      "buy": 73.2,
-      "sell": 77.5,
-      "spread": 4.3,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
