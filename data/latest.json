@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-11T21:33:34Z",
+  "generated_at_utc": "2025-09-11T22:10:43Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -13,7 +13,7 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Caribe",
+      "bank": "Banreservas",
       "currency": "USD",
       "buy": 61.7,
       "sell": 63.7,
@@ -22,7 +22,7 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banreservas",
+      "bank": "Banco Caribe",
       "currency": "USD",
       "buy": 61.7,
       "sell": 63.7,
@@ -58,7 +58,7 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco Vimenca",
       "currency": "EUR",
       "buy": 72.0,
       "sell": 77.0,
@@ -67,7 +67,7 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco Vimenca",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 72.0,
       "sell": 77.0,
