@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-11T12:59:55Z",
+  "generated_at_utc": "2025-09-11T13:26:17Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,29 +22,29 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Popular",
-      "currency": "USD",
-      "buy": 60.95,
-      "sell": 63.8,
-      "spread": 2.85,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Caribe",
       "currency": "USD",
-      "buy": 62.85,
-      "sell": 63.85,
-      "spread": 1.0,
+      "buy": 61.7,
+      "sell": 63.7,
+      "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
     {
       "bank": "Banco BHD",
       "currency": "USD",
-      "buy": 61.1,
-      "sell": 63.9,
+      "buy": 61.0,
+      "sell": 63.8,
       "spread": 2.8,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco Popular",
+      "currency": "USD",
+      "buy": 60.95,
+      "sell": 63.8,
+      "spread": 2.85,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -56,15 +56,6 @@
       "spread": 1.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
-    },
-    {
-      "bank": "Banco Caribe",
-      "currency": "EUR",
-      "buy": 72.4,
-      "sell": 76.7,
-      "spread": 4.3,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -81,6 +72,15 @@
       "buy": 72.0,
       "sell": 77.0,
       "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Caribe",
+      "currency": "EUR",
+      "buy": 72.4,
+      "sell": 77.0,
+      "spread": 4.6,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
