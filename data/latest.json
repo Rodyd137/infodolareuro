@@ -1,8 +1,17 @@
 {
-  "generated_at_utc": "2025-09-15T13:40:05Z",
+  "generated_at_utc": "2025-09-15T14:12:54Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
+    {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 60.9,
+      "sell": 63.7,
+      "spread": 2.8,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
@@ -40,15 +49,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 60.95,
-      "sell": 63.75,
-      "spread": 2.8,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Vimenca",
       "currency": "USD",
       "buy": 61.25,
@@ -56,6 +56,15 @@
       "spread": 2.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "EUR",
+      "buy": 71.4,
+      "sell": 76.4,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
       "bank": "Banco Popular",
@@ -90,15 +99,6 @@
       "buy": 72.4,
       "sell": 77.0,
       "spread": 4.6,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
-      "bank": "Banco BHD",
-      "currency": "EUR",
-      "buy": 72.1,
-      "sell": 77.1,
-      "spread": 5.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
