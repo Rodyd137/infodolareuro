@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2025-09-19T16:13:45Z",
+  "generated_at_utc": "2025-09-19T16:41:40Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
     {
-      "bank": "Banreservas",
+      "bank": "Banco Popular",
       "currency": "USD",
-      "buy": 60.9,
-      "sell": 62.9,
+      "buy": 60.6,
+      "sell": 62.6,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
@@ -16,22 +16,22 @@
       "bank": "Banco Caribe",
       "currency": "USD",
       "buy": 61.4,
-      "sell": 62.9,
-      "spread": 1.5,
+      "sell": 62.6,
+      "spread": 1.2,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banreservas",
+      "currency": "USD",
+      "buy": 60.7,
+      "sell": 62.7,
+      "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
     {
       "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 60.45,
-      "sell": 62.95,
-      "spread": 2.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
-      "bank": "Banco Popular",
       "currency": "USD",
       "buy": 60.45,
       "sell": 62.95,
@@ -76,20 +76,20 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco Vimenca",
-      "currency": "EUR",
-      "buy": 71.8,
-      "sell": 76.5,
-      "spread": 4.7,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 71.0,
       "sell": 76.5,
       "spread": 5.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "EUR",
+      "buy": 71.8,
+      "sell": 76.5,
+      "spread": 4.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
