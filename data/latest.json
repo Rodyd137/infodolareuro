@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-22T14:12:53Z",
+  "generated_at_utc": "2025-09-22T14:41:23Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -7,8 +7,8 @@
       "bank": "Banco Caribe",
       "currency": "USD",
       "buy": 61.4,
-      "sell": 62.5,
-      "spread": 1.1,
+      "sell": 62.4,
+      "spread": 1.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
