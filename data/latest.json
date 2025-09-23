@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-09-23T13:01:59Z",
+  "generated_at_utc": "2025-09-23T13:43:36Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -51,9 +51,9 @@
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
-      "buy": 60.9,
+      "buy": 61.2,
       "sell": 62.9,
-      "spread": 2.0,
+      "spread": 1.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -63,6 +63,15 @@
       "buy": 71.65,
       "sell": 76.05,
       "spread": 4.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "EUR",
+      "buy": 71.8,
+      "sell": 76.25,
+      "spread": 4.45,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
@@ -81,15 +90,6 @@
       "buy": 71.0,
       "sell": 76.5,
       "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
-      "bank": "Banco Vimenca",
-      "currency": "EUR",
-      "buy": 71.8,
-      "sell": 76.5,
-      "spread": 4.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
