@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-10-07T13:03:23Z",
+  "generated_at_utc": "2025-10-07T13:43:49Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -13,15 +13,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Vimenca",
-      "currency": "USD",
-      "buy": 61.85,
-      "sell": 63.1,
-      "spread": 1.25,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banreservas",
       "currency": "USD",
       "buy": 61.15,
@@ -31,20 +22,29 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 62.2,
-      "sell": 63.2,
-      "spread": 1.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "USD",
       "buy": 61.2,
       "sell": 63.2,
       "spread": 2.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "USD",
+      "buy": 61.95,
+      "sell": 63.2,
+      "spread": 1.25,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 62.2,
+      "sell": 63.2,
+      "spread": 1.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
