@@ -1,9 +1,9 @@
 bank,currency,buy,sell,spread,as_of_local,source
-Banreservas,USD,61.45,63.45,2.0,,https://www.infodolar.com.do/
 Banco Caribe,USD,62.45,63.45,1.0,,https://www.infodolar.com.do/
-Asociación Cibao de Ahorros y Préstamos,USD,62.55,63.55,1.0,,https://www.infodolar.com.do/
+Banreservas,USD,61.5,63.5,2.0,,https://www.infodolar.com.do/
 Banco Popular,USD,61.4,63.55,2.15,,https://www.infodolar.com.do/
 Banco BHD,USD,61.55,63.6,2.05,,https://www.infodolar.com.do/
+Asociación Cibao de Ahorros y Préstamos,USD,62.6,63.6,1.0,,https://www.infodolar.com.do/
 Banco Vimenca,USD,62.25,63.6,1.35,,https://www.infodolar.com.do/
 Banco Vimenca,EUR,71.5,75.5,4.0,,https://www.infodolar.com.do/precio-euro.aspx
 Banco Popular,EUR,71.25,75.65,4.4,,https://www.infodolar.com.do/precio-euro.aspx
