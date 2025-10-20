@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-10-20T19:33:53Z",
+  "generated_at_utc": "2025-10-20T20:13:50Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -15,8 +15,8 @@
     {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 61.95,
-      "sell": 63.95,
+      "buy": 62.0,
+      "sell": 64.0,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
