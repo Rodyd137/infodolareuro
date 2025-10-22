@@ -1,17 +1,8 @@
 {
-  "generated_at_utc": "2025-10-22T13:48:11Z",
+  "generated_at_utc": "2025-10-22T14:13:21Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
-    {
-      "bank": "Banco Caribe",
-      "currency": "USD",
-      "buy": 63.05,
-      "sell": 64.05,
-      "spread": 1.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
     {
       "bank": "Banreservas",
       "currency": "USD",
@@ -22,11 +13,11 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Popular",
+      "bank": "Banco Caribe",
       "currency": "USD",
-      "buy": 61.9,
-      "sell": 64.25,
-      "spread": 2.35,
+      "buy": 63.15,
+      "sell": 64.15,
+      "spread": 1.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -54,6 +45,15 @@
       "buy": 62.85,
       "sell": 64.25,
       "spread": 1.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco Popular",
+      "currency": "USD",
+      "buy": 61.9,
+      "sell": 64.25,
+      "spread": 2.35,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
