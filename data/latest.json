@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-03T19:33:40Z",
+  "generated_at_utc": "2025-11-03T20:14:09Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,6 +22,15 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 63.6,
+      "sell": 64.6,
+      "spread": 1.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
       "bank": "Banco BHD",
       "currency": "USD",
       "buy": 62.55,
@@ -40,15 +49,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 63.6,
-      "sell": 64.6,
-      "spread": 1.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Popular",
       "currency": "USD",
       "buy": 62.2,
@@ -58,20 +58,20 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Vimenca",
-      "currency": "EUR",
-      "buy": 72.5,
-      "sell": 76.5,
-      "spread": 4.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 72.0,
       "sell": 76.5,
       "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "EUR",
+      "buy": 72.5,
+      "sell": 76.5,
+      "spread": 4.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
