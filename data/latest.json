@@ -1,14 +1,14 @@
 {
-  "generated_at_utc": "2025-11-17T13:06:23Z",
+  "generated_at_utc": "2025-11-17T13:46:44Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
     {
-      "bank": "Banco Vimenca",
+      "bank": "Banco Caribe",
       "currency": "USD",
       "buy": 63.0,
-      "sell": 64.4,
-      "spread": 1.4,
+      "sell": 64.3,
+      "spread": 1.3,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -22,20 +22,20 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
+      "bank": "Banco Vimenca",
+      "currency": "USD",
+      "buy": 63.0,
+      "sell": 64.5,
+      "spread": 1.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
       "bank": "Banreservas",
       "currency": "USD",
       "buy": 62.5,
       "sell": 64.5,
       "spread": 2.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
-      "bank": "Banco Caribe",
-      "currency": "USD",
-      "buy": 63.5,
-      "sell": 64.5,
-      "spread": 1.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -76,6 +76,15 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
+      "bank": "Banco Popular",
+      "currency": "EUR",
+      "buy": 72.45,
+      "sell": 76.85,
+      "spread": 4.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 72.5,
@@ -99,15 +108,6 @@
       "buy": 71.5,
       "sell": 77.0,
       "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
-      "bank": "Banco Popular",
-      "currency": "EUR",
-      "buy": 72.85,
-      "sell": 77.25,
-      "spread": 4.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     }
