@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-24T13:49:01Z",
+  "generated_at_utc": "2025-11-24T14:13:19Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,20 +22,20 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 61.8,
-      "sell": 64.0,
-      "spread": 2.2,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco Vimenca",
       "currency": "USD",
       "buy": 62.0,
       "sell": 64.0,
       "spread": 2.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 61.8,
+      "sell": 64.0,
+      "spread": 2.2,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -60,8 +60,8 @@
     {
       "bank": "Banco Popular",
       "currency": "EUR",
-      "buy": 71.05,
-      "sell": 75.45,
+      "buy": 70.65,
+      "sell": 75.05,
       "spread": 4.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
