@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-26T17:39:30Z",
+  "generated_at_utc": "2025-11-26T18:15:51Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,24 +22,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 61.8,
-      "sell": 64.0,
-      "spread": 2.2,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
-      "bank": "Banco Vimenca",
-      "currency": "USD",
-      "buy": 62.0,
-      "sell": 64.0,
-      "spread": 2.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 62.0,
@@ -49,11 +31,29 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 61.8,
+      "sell": 64.0,
+      "spread": 2.2,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
       "bank": "Banco Popular",
       "currency": "USD",
       "buy": 61.6,
       "sell": 64.0,
       "spread": 2.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "USD",
+      "buy": 62.0,
+      "sell": 64.0,
+      "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -85,20 +85,20 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco Vimenca",
-      "currency": "EUR",
-      "buy": 71.5,
-      "sell": 76.0,
-      "spread": 4.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Banreservas",
       "currency": "EUR",
       "buy": 70.5,
       "sell": 76.0,
       "spread": 5.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Vimenca",
+      "currency": "EUR",
+      "buy": 71.5,
+      "sell": 76.0,
+      "spread": 4.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
