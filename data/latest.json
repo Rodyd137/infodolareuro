@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-26T16:15:54Z",
+  "generated_at_utc": "2025-11-26T16:47:47Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -31,7 +31,7 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco Vimenca",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 62.0,
       "sell": 64.0,
@@ -40,7 +40,7 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco Vimenca",
       "currency": "USD",
       "buy": 62.0,
       "sell": 64.0,
