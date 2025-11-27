@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-11-27T14:41:45Z",
+  "generated_at_utc": "2025-11-27T15:12:49Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -42,8 +42,8 @@
     {
       "bank": "Banco BHD",
       "currency": "USD",
-      "buy": 61.8,
-      "sell": 64.0,
+      "buy": 61.85,
+      "sell": 64.05,
       "spread": 2.2,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
