@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2025-12-05T18:16:18Z",
+  "generated_at_utc": "2025-12-05T18:47:00Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
     {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 62.75,
-      "sell": 64.75,
+      "buy": 62.55,
+      "sell": 64.55,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
@@ -58,15 +58,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banreservas",
-      "currency": "EUR",
-      "buy": 71.5,
-      "sell": 77.0,
-      "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Banco Caribe",
       "currency": "EUR",
       "buy": 72.7,
@@ -108,6 +99,15 @@
       "buy": 73.0,
       "sell": 78.0,
       "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banreservas",
+      "currency": "EUR",
+      "buy": 72.5,
+      "sell": 78.0,
+      "spread": 5.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     }
