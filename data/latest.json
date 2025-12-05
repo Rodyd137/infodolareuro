@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-12-05T20:14:03Z",
+  "generated_at_utc": "2025-12-05T20:41:21Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,15 +22,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 63.6,
-      "sell": 64.8,
-      "spread": 1.2,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "USD",
       "buy": 62.6,
@@ -45,6 +36,15 @@
       "buy": 63.5,
       "sell": 64.8,
       "spread": 1.3,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 63.6,
+      "sell": 64.8,
+      "spread": 1.2,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -85,7 +85,7 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 73.0,
       "sell": 78.0,
@@ -94,7 +94,7 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco BHD",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 73.0,
       "sell": 78.0,
