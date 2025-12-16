@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2025-12-16T14:16:34Z",
+  "generated_at_utc": "2025-12-16T14:47:54Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
     {
-      "bank": "Banreservas",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 61.8,
       "sell": 63.8,
@@ -13,10 +13,10 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banreservas",
       "currency": "USD",
-      "buy": 62.0,
-      "sell": 64.0,
+      "buy": 61.8,
+      "sell": 63.8,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
