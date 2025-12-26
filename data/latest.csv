@@ -1,8 +1,8 @@
 bank,currency,buy,sell,spread,as_of_local,source
 Banco Caribe,USD,62.0,63.7,1.7,,https://www.infodolar.com.do/
 Banreservas,USD,61.85,63.85,2.0,,https://www.infodolar.com.do/
-Banco BHD,USD,61.7,63.9,2.2,,https://www.infodolar.com.do/
 Asociación Cibao de Ahorros y Préstamos,USD,62.25,64.0,1.75,,https://www.infodolar.com.do/
+Banco BHD,USD,61.8,64.0,2.2,,https://www.infodolar.com.do/
 Banco Popular,USD,61.55,64.0,2.45,,https://www.infodolar.com.do/
 Banco Popular,EUR,72.2,76.6,4.4,,https://www.infodolar.com.do/precio-euro.aspx
 Asociación Cibao de Ahorros y Préstamos,EUR,72.5,77.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx
