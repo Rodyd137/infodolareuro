@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-01-19T15:18:01Z",
+  "generated_at_utc": "2026-01-19T15:46:55Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -51,8 +51,8 @@
     {
       "bank": "Banco Popular",
       "currency": "EUR",
-      "buy": 71.55,
-      "sell": 75.95,
+      "buy": 71.35,
+      "sell": 75.75,
       "spread": 4.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
