@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-01-19T13:58:48Z",
+  "generated_at_utc": "2026-01-19T14:28:45Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -42,9 +42,9 @@
     {
       "bank": "Banco Popular",
       "currency": "USD",
-      "buy": 61.55,
+      "buy": 61.5,
       "sell": 64.2,
-      "spread": 2.65,
+      "spread": 2.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
