@@ -1,13 +1,13 @@
 {
-  "generated_at_utc": "2026-02-26T15:10:38Z",
+  "generated_at_utc": "2026-02-26T16:12:27Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
-      "buy": 59.1,
-      "sell": 61.1,
+      "buy": 59.0,
+      "sell": 61.0,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
