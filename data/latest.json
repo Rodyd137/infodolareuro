@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-04T12:35:44Z",
+  "generated_at_utc": "2026-03-04T13:50:59Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -15,8 +15,8 @@
     {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 58.8,
-      "sell": 60.8,
+      "buy": 59.0,
+      "sell": 61.0,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
@@ -40,15 +40,6 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "EUR",
-      "buy": 68.0,
-      "sell": 73.0,
-      "spread": 5.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 68.5,
@@ -63,6 +54,15 @@
       "buy": 68.5,
       "sell": 73.0,
       "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 68.0,
+      "sell": 73.0,
+      "spread": 5.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
