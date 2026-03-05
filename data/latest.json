@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-05T12:38:58Z",
+  "generated_at_utc": "2026-03-05T13:55:38Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -15,8 +15,8 @@
     {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 59.0,
-      "sell": 61.0,
+      "buy": 59.25,
+      "sell": 61.25,
       "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
@@ -24,9 +24,9 @@
     {
       "bank": "Banco Caribe",
       "currency": "USD",
-      "buy": 58.9,
-      "sell": 61.0,
-      "spread": 2.1,
+      "buy": 59.25,
+      "sell": 61.4,
+      "spread": 2.15,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
@@ -49,20 +49,20 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco Caribe",
-      "currency": "EUR",
-      "buy": 68.5,
-      "sell": 73.0,
-      "spread": 4.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 69.0,
       "sell": 73.5,
       "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+    },
+    {
+      "bank": "Banco Caribe",
+      "currency": "EUR",
+      "buy": 68.5,
+      "sell": 73.7,
+      "spread": 5.2,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
