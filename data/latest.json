@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-31T12:55:14Z",
+  "generated_at_utc": "2026-03-31T14:23:29Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -15,8 +15,8 @@
     {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 59.1,
-      "sell": 61.6,
+      "buy": 59.2,
+      "sell": 61.7,
       "spread": 2.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
@@ -24,9 +24,9 @@
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
-      "buy": 58.2,
-      "sell": 61.7,
-      "spread": 3.5,
+      "buy": 58.8,
+      "sell": 61.8,
+      "spread": 3.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
