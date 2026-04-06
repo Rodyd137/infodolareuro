@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-06T11:25:04Z",
+  "generated_at_utc": "2026-04-06T12:02:43Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -22,20 +22,20 @@
       "source": "https://www.infodolar.com.do/"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 58.4,
-      "sell": 61.9,
-      "spread": 3.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 58.9,
       "sell": 61.9,
       "spread": 3.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 58.4,
+      "sell": 61.9,
+      "spread": 3.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/"
     },
