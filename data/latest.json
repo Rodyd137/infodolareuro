@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-20T13:31:13Z",
+  "generated_at_utc": "2026-05-20T16:45:06Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -49,7 +49,7 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 67.0,
       "sell": 73.0,
@@ -58,7 +58,7 @@
       "source": "https://www.infodolar.com.do/precio-euro.aspx"
     },
     {
-      "bank": "Banco BHD",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 67.0,
       "sell": 73.0,
