@@ -1,5 +1,6 @@
 import os, json, csv, datetime as dt, urllib.request
 from parse import parse_table
+from caribe_express import fetch_rates as fetch_caribe_express
 
 USD_URL = "https://www.infodolar.com.do/"
 EUR_URLS = [
@@ -29,9 +30,12 @@ def main():
 
     usd_rows, ts_usd = parse_table(usd_html, "USD", USD_URL)
     eur_rows, ts_eur = parse_table(eur_html, "EUR", eur_used)
+    # Direct-from-source rows. Same shape as parse_table output so they
+    # slot into the same items map without special-casing downstream.
+    caribe_rows = fetch_caribe_express()
 
     items_map = {}
-    for row in usd_rows + eur_rows:
+    for row in usd_rows + eur_rows + caribe_rows:
         key = (row["bank"], row["currency"])
         items_map[key] = row
 
