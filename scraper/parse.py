@@ -103,6 +103,13 @@ def _probe(url: str) -> bool:
         return False
 
 
+# Basenames whose PNG variants on infodolar have a baked-in white
+# rectangle background — promoting them would force the iOS hero card
+# to show a white block over the colored gradient. Keep these as `.svg`
+# so the client falls through to its bundled (transparent) asset.
+_PNG_DENYLIST = {"banreservas"}
+
+
 def _prefer_png(src_abs: str) -> str:
     """Most logos are published as `<name>.svg`, but iOS's `AsyncImage`
     cannot decode SVG over a URL — it only handles raster formats. The
@@ -116,6 +123,10 @@ def _prefer_png(src_abs: str) -> str:
         _LOGO_PROBE_CACHE[src_abs] = src_abs
         return src_abs
     base = src_abs[:-4]  # drop ".svg"
+    basename = base.rsplit("/", 1)[-1].lower()
+    if basename in _PNG_DENYLIST:
+        _LOGO_PROBE_CACHE[src_abs] = src_abs
+        return src_abs
     for candidate in (base + "-2x.png", base + ".png"):
         if _probe(candidate):
             _LOGO_PROBE_CACHE[src_abs] = candidate
