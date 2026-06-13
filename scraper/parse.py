@@ -16,6 +16,30 @@ NAME_OVERRIDES = {
     "Asociación Cibao": "Asociación Cibao de Ahorros y Préstamos",
 }
 
+# Entities to drop from the feed even though they appear on the source
+# page. Matched after name resolution, case-insensitively + diacritic-
+# insensitive so "Motor Crédito" and "motor credito" both match. The
+# list is intentionally small and reviewed by the app owner — keep it
+# in sync with their preferred surface set rather than auto-pruning.
+EXCLUDED_ENTITIES = {
+    "abonap",
+    "taveras",
+    "motor credito",
+    "moneycorps",
+    "sct",
+    "rm",
+    "gamelin",
+}
+
+
+def _is_excluded(name: str) -> bool:
+    norm = (
+        name.lower()
+        .replace("á", "a").replace("é", "e").replace("í", "i")
+        .replace("ó", "o").replace("ú", "u").replace("ñ", "n")
+    )
+    return norm in EXCLUDED_ENTITIES
+
 def _clean(txt: str) -> str:
     return re.sub(r"\s+", " ", (txt or "").strip()).replace("\xa0", " ")
 
@@ -184,6 +208,8 @@ def parse_table(html: str, currency: str, source_url: str):
                 continue
             name = _entity_name(img)
             if not name:
+                continue
+            if _is_excluded(name):
                 continue
 
             row_text = _clean(tr.get_text(" ", strip=True))
