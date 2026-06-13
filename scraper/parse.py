@@ -29,6 +29,10 @@ EXCLUDED_ENTITIES = {
     "sct",
     "rm",
     "gamelin",
+    "capla",
+    "cambio extranjero",
+    "panora exchange",
+    "asociacion peravia de ahorros y prestamos",
 }
 
 
