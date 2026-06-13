@@ -1,6 +1,12 @@
 import re
+import urllib.request
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
+
+# Tiny in-memory cache for the PNG-availability probe in `_extract_logo`.
+# Same bank logo URL appears in every row across both pages, so we cap
+# the extra HEAD requests at one per distinct path per run.
+_LOGO_PROBE_CACHE: dict[str, str] = {}
 
 TARGET_BANKS = {
     "banreservas": "Banreservas",
@@ -86,17 +92,51 @@ def numbers_in_text(txt: str):
             out.append(n)
     return out
 
+def _probe(url: str) -> bool:
+    """HEAD-style probe — returns True if the URL is 2xx."""
+    try:
+        req = urllib.request.Request(url, method="HEAD",
+                                     headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=8) as r:
+            return 200 <= r.status < 300
+    except Exception:
+        return False
+
+
+def _prefer_png(src_abs: str) -> str:
+    """Most logos are published as `<name>.svg`, but iOS's `AsyncImage`
+    cannot decode SVG over a URL — it only handles raster formats. The
+    site happens to also publish raster variants at predictable paths.
+    Probe the most desirable variants in order and return the first one
+    that exists, falling back to the original `.svg` URL when nothing
+    else does (the client will then degrade to its bundled asset)."""
+    if src_abs in _LOGO_PROBE_CACHE:
+        return _LOGO_PROBE_CACHE[src_abs]
+    if not src_abs.lower().endswith(".svg"):
+        _LOGO_PROBE_CACHE[src_abs] = src_abs
+        return src_abs
+    base = src_abs[:-4]  # drop ".svg"
+    for candidate in (base + "-2x.png", base + ".png"):
+        if _probe(candidate):
+            _LOGO_PROBE_CACHE[src_abs] = candidate
+            return candidate
+    _LOGO_PROBE_CACHE[src_abs] = src_abs
+    return src_abs
+
+
 def _extract_logo(tr, source_url: str) -> str | None:
     """Each <tr> on infodolar.com.do carries the bank's logo as the
     leading <img>, e.g. `<img src="/images/entidades/banreservas.svg">`.
-    Resolve the (usually relative) src to an absolute URL so the iOS
-    client can hotlink it directly."""
+    Resolve the relative src to an absolute URL and, when only the SVG
+    variant is referenced, prefer the raster PNG that exists at the
+    same path so the iOS client (which can't render remote SVG via
+    AsyncImage) can hotlink it directly."""
     for img in tr.find_all("img"):
         src = img.get("src") or img.get("data-src")
         if not src:
             continue
         if "/images/entidades/" in src:
-            return urljoin(source_url, src)
+            return _prefer_png(urljoin(source_url, src))
     return None
 
 
