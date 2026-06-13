@@ -8,26 +8,16 @@ from bs4 import BeautifulSoup
 # the extra HEAD requests at one per distinct path per run.
 _LOGO_PROBE_CACHE: dict[str, str] = {}
 
-TARGET_BANKS = {
-    "banreservas": "Banreservas",
-    "banco popular": "Banco Popular",
-    "popular dominicano": "Banco Popular",
-    "banco bhd": "Banco BHD",
-    "bhd": "Banco BHD",
-    "banco vimenca": "Banco Vimenca",
-    "vimenca": "Banco Vimenca",
-    "asociación cibao": "Asociación Cibao de Ahorros y Préstamos",
-    "asociacion cibao": "Asociación Cibao de Ahorros y Préstamos",
-    "asociación cibao de ahorros y préstamos": "Asociación Cibao de Ahorros y Préstamos",
-    "asociacion cibao de ahorros y prestamos": "Asociación Cibao de Ahorros y Préstamos",
-    "banco caribe": "Banco Caribe",
+# Name normalisation. The <img alt> on infodolar.com.do rows already
+# carries the canonical entity name once we strip the leading "Dólar "
+# or "Euro " currency word; this map only exists to rewrite a few
+# noisier alt texts to the form the iOS app expects.
+NAME_OVERRIDES = {
+    "Asociación Cibao": "Asociación Cibao de Ahorros y Préstamos",
 }
 
 def _clean(txt: str) -> str:
     return re.sub(r"\s+", " ", (txt or "").strip()).replace("\xa0", " ")
-
-def _norm(txt: str) -> str:
-    return _clean(txt).lower()
 
 def _fix_magnitude(n: float) -> float:
     # Corrige cuando el número llega como 6405000.00 en vez de 64.05
@@ -151,40 +141,67 @@ def _extract_logo(tr, source_url: str) -> str | None:
     return None
 
 
+def _row_entity_img(tr):
+    """Return the first <img> that points at /images/entidades/, or
+    None when the row isn't an entity row (headers, summary rows, etc)."""
+    for img in tr.find_all("img"):
+        src = img.get("src") or img.get("data-src") or ""
+        if "/images/entidades/" in src:
+            return img
+    return None
+
+
+def _entity_name(img) -> str:
+    """Canonical entity name from the <img alt>, stripped of the
+    currency-word prefix infodolar adds for SEO."""
+    alt = (img.get("alt") or "").strip()
+    for prefix in ("Dólar ", "Euro ", "Dolar "):
+        if alt.startswith(prefix):
+            alt = alt[len(prefix):]
+            break
+    alt = _clean(alt)
+    return NAME_OVERRIDES.get(alt, alt)
+
+
 def parse_table(html: str, currency: str, source_url: str):
     """
-    Estrategia robusta:
-    - Buscar todas las filas <tr> de las tablas.
-    - Para cada fila, si el texto contiene alguno de los bancos objetivo, extraer
-      los primeros 2 números de la fila (compra, venta) y el logo del banco.
+    Estrategia:
+    - Recorrer todas las filas <tr> de todas las tablas.
+    - Una fila cuenta como dato de tasa cuando tiene un <img> de
+      /images/entidades/ Y al menos dos números en rango (10..300) —
+      compra y venta. Cualquier banco, asociación o cambista que
+      cumpla ambas condiciones entra al feed sin necesidad de
+      hardcodear su nombre.
     """
     soup = BeautifulSoup(html, "html.parser")
     updated_text = find_updated_text(soup)
     rows_out = []
 
-    # Recorre TODAS las filas de TODAS las tablas
     for table in soup.find_all("table"):
         for tr in table.find_all("tr"):
-            row_text = _clean(tr.get_text(" ", strip=True))
-            norm = _norm(row_text)
-            matched_nice = None
-            for key, nice in TARGET_BANKS.items():
-                if key in norm:
-                    matched_nice = nice
-                    break
-            if not matched_nice:
+            img = _row_entity_img(tr)
+            if img is None:
+                continue
+            name = _entity_name(img)
+            if not name:
                 continue
 
+            row_text = _clean(tr.get_text(" ", strip=True))
             nums = numbers_in_text(row_text)
             # Filtra solo valores razonables (tasas reales, no variaciones u otros)
             nums = [n for n in nums if 10 <= n <= 300]
-            buy = nums[0] if len(nums) >= 1 else None
-            sell = nums[1] if len(nums) >= 2 else None
-            spread = round(sell - buy, 2) if (buy is not None and sell is not None) else None
+            # Skip rows that only published a partial rate — a row
+            # without both buy AND sell isn't actionable in the app.
+            if len(nums) < 2:
+                continue
+
+            buy = nums[0]
+            sell = nums[1]
+            spread = round(sell - buy, 2)
             logo_url = _extract_logo(tr, source_url)
 
             rows_out.append({
-                "bank": matched_nice,
+                "bank": name,
                 "currency": currency,
                 "buy": buy,
                 "sell": sell,
