@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 TARGET_BANKS = {
@@ -85,12 +86,26 @@ def numbers_in_text(txt: str):
             out.append(n)
     return out
 
+def _extract_logo(tr, source_url: str) -> str | None:
+    """Each <tr> on infodolar.com.do carries the bank's logo as the
+    leading <img>, e.g. `<img src="/images/entidades/banreservas.svg">`.
+    Resolve the (usually relative) src to an absolute URL so the iOS
+    client can hotlink it directly."""
+    for img in tr.find_all("img"):
+        src = img.get("src") or img.get("data-src")
+        if not src:
+            continue
+        if "/images/entidades/" in src:
+            return urljoin(source_url, src)
+    return None
+
+
 def parse_table(html: str, currency: str, source_url: str):
     """
     Estrategia robusta:
     - Buscar todas las filas <tr> de las tablas.
     - Para cada fila, si el texto contiene alguno de los bancos objetivo, extraer
-      los primeros 2 números de la fila (compra, venta).
+      los primeros 2 números de la fila (compra, venta) y el logo del banco.
     """
     soup = BeautifulSoup(html, "html.parser")
     updated_text = find_updated_text(soup)
@@ -115,6 +130,7 @@ def parse_table(html: str, currency: str, source_url: str):
             buy = nums[0] if len(nums) >= 1 else None
             sell = nums[1] if len(nums) >= 2 else None
             spread = round(sell - buy, 2) if (buy is not None and sell is not None) else None
+            logo_url = _extract_logo(tr, source_url)
 
             rows_out.append({
                 "bank": matched_nice,
@@ -123,7 +139,8 @@ def parse_table(html: str, currency: str, source_url: str):
                 "sell": sell,
                 "spread": spread,
                 "as_of_local": updated_text,
-                "source": source_url
+                "source": source_url,
+                "logo_url": logo_url,
             })
 
     # Dedupe por banco (si la página repite tablas)

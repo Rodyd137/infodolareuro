@@ -48,9 +48,9 @@ def main():
 
     with open("data/latest.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["bank", "currency", "buy", "sell", "spread", "as_of_local", "source"])
+        w.writerow(["bank", "currency", "buy", "sell", "spread", "as_of_local", "source", "logo_url"])
         for it in data["items"]:
-            w.writerow([it["bank"], it["currency"], it["buy"], it["sell"], it["spread"], it["as_of_local"], it["source"]])
+            w.writerow([it["bank"], it["currency"], it["buy"], it["sell"], it["spread"], it["as_of_local"], it["source"], it.get("logo_url")])
 
     ts = dt.datetime.now().strftime("%Y/%m/%d-%H%M")
     path = f"history/{ts}.json"
