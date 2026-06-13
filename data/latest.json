@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-13T12:19:24Z",
+  "generated_at_utc": "2026-06-13T13:54:56Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -10,7 +10,8 @@
       "sell": 60.0,
       "spread": 3.0,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banco BHD",
@@ -19,7 +20,8 @@
       "sell": 60.0,
       "spread": 3.4,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
       "bank": "Banreservas",
@@ -28,7 +30,8 @@
       "sell": 60.0,
       "spread": 3.0,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Banco Caribe",
@@ -37,7 +40,8 @@
       "sell": 60.0,
       "spread": 2.0,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/"
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-caribe.svg"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -46,7 +50,8 @@
       "sell": 71.0,
       "spread": 5.0,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banco BHD",
@@ -55,7 +60,8 @@
       "sell": 71.0,
       "spread": 4.5,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
       "bank": "Banco Caribe",
@@ -64,7 +70,8 @@
       "sell": 71.0,
       "spread": 4.0,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-caribe.svg"
     },
     {
       "bank": "Banreservas",
@@ -73,7 +80,8 @@
       "sell": 72.0,
       "spread": 5.5,
       "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx"
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     }
   ]
 }

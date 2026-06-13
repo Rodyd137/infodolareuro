@@ -1,9 +1,9 @@
-bank,currency,buy,sell,spread,as_of_local,source
-Asociación Cibao de Ahorros y Préstamos,USD,57.0,60.0,3.0,,https://www.infodolar.com.do/
-Banco BHD,USD,56.6,60.0,3.4,,https://www.infodolar.com.do/
-Banreservas,USD,57.0,60.0,3.0,,https://www.infodolar.com.do/
-Banco Caribe,USD,58.0,60.0,2.0,,https://www.infodolar.com.do/
-Asociación Cibao de Ahorros y Préstamos,EUR,66.0,71.0,5.0,,https://www.infodolar.com.do/precio-euro.aspx
-Banco BHD,EUR,66.5,71.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx
-Banco Caribe,EUR,67.0,71.0,4.0,,https://www.infodolar.com.do/precio-euro.aspx
-Banreservas,EUR,66.5,72.0,5.5,,https://www.infodolar.com.do/precio-euro.aspx
+bank,currency,buy,sell,spread,as_of_local,source,logo_url
+Asociación Cibao de Ahorros y Préstamos,USD,57.0,60.0,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
+Banco BHD,USD,56.6,60.0,3.4,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
+Banreservas,USD,57.0,60.0,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banreservas.svg
+Banco Caribe,USD,58.0,60.0,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-caribe.svg
+Asociación Cibao de Ahorros y Préstamos,EUR,66.0,71.0,5.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/cibao.svg
+Banco BHD,EUR,66.5,71.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
+Banco Caribe,EUR,67.0,71.0,4.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-caribe.svg
+Banreservas,EUR,66.5,72.0,5.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banreservas.svg
