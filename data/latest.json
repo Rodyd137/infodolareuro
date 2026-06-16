@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-16T00:23:12Z",
+  "generated_at_utc": "2026-06-16T05:42:01Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -239,7 +239,7 @@
       "buy": 58.0,
       "sell": 60.0,
       "spread": 2.0,
-      "as_of_local": "20260615",
+      "as_of_local": "20260616",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -249,7 +249,7 @@
       "buy": 67.0,
       "sell": 71.0,
       "spread": 4.0,
-      "as_of_local": "20260615",
+      "as_of_local": "20260616",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -259,7 +259,7 @@
       "buy": 39.3,
       "sell": 43.7,
       "spread": 4.4,
-      "as_of_local": "20260615",
+      "as_of_local": "20260616",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -269,7 +269,7 @@
       "buy": 71.1,
       "sell": 76.0,
       "spread": 4.9,
-      "as_of_local": "20260615",
+      "as_of_local": "20260616",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -279,7 +279,7 @@
       "buy": 75.55,
       "sell": 81.0,
       "spread": 5.45,
-      "as_of_local": "20260615",
+      "as_of_local": "20260616",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
