@@ -1,18 +1,8 @@
 {
-  "generated_at_utc": "2026-06-19T15:17:04Z",
+  "generated_at_utc": "2026-06-19T17:28:31Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
-    {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 56.9,
-      "sell": 59.9,
-      "spread": 3.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
-    },
     {
       "bank": "Banco BHD",
       "currency": "USD",
@@ -22,6 +12,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 56.9,
+      "sell": 59.9,
+      "spread": 3.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banreservas",
@@ -124,16 +124,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "EUR",
-      "buy": 66.0,
-      "sell": 71.0,
-      "spread": 5.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 66.5,
@@ -142,6 +132,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 66.0,
+      "sell": 71.0,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banreservas",
