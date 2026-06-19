@@ -1,8 +1,18 @@
 {
-  "generated_at_utc": "2026-06-19T11:58:32Z",
+  "generated_at_utc": "2026-06-19T15:17:04Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 56.9,
+      "sell": 59.9,
+      "spread": 3.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
     {
       "bank": "Banco BHD",
       "currency": "USD",
@@ -32,16 +42,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 57.0,
-      "sell": 60.0,
-      "spread": 3.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Bonanza Banco",
@@ -124,6 +124,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 66.0,
+      "sell": 71.0,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
       "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 66.5,
@@ -134,14 +144,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banreservas",
       "currency": "EUR",
-      "buy": 66.0,
+      "buy": 65.5,
       "sell": 71.0,
-      "spread": 5.0,
+      "spread": 5.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Banco Caribe",
@@ -162,16 +172,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
-    },
-    {
-      "bank": "Banreservas",
-      "currency": "EUR",
-      "buy": 66.5,
-      "sell": 72.0,
-      "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Banesco",
@@ -236,9 +236,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "USD",
-      "buy": 57.5,
+      "buy": 57.0,
       "sell": 60.0,
-      "spread": 2.5,
+      "spread": 3.0,
       "as_of_local": "20260619",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -266,9 +266,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "CHF",
-      "buy": 70.0,
+      "buy": 69.9,
       "sell": 76.0,
-      "spread": 6.0,
+      "spread": 6.1,
       "as_of_local": "20260619",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
