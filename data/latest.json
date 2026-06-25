@@ -1,18 +1,8 @@
 {
-  "generated_at_utc": "2026-06-25T16:15:40Z",
+  "generated_at_utc": "2026-06-25T18:29:19Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
-    {
-      "bank": "Bonanza Banco",
-      "currency": "USD",
-      "buy": 58.3,
-      "sell": 60.0,
-      "spread": 1.7,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
-    },
     {
       "bank": "Banco Caribe",
       "currency": "USD",
@@ -22,26 +12,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png"
-    },
-    {
-      "bank": "Asociación Popular de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 57.0,
-      "sell": 60.25,
-      "spread": 3.25,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
-    },
-    {
-      "bank": "Asociación La Nacional de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 58.0,
-      "sell": 60.5,
-      "spread": 2.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
     },
     {
       "bank": "Banco BHD",
@@ -64,14 +34,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
-      "bank": "Banco Unión",
+      "bank": "Bonanza Banco",
       "currency": "USD",
-      "buy": 58.5,
+      "buy": 58.7,
       "sell": 60.5,
-      "spread": 2.0,
+      "spread": 1.8,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
     },
     {
       "bank": "Banreservas",
@@ -92,6 +62,36 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
+      "bank": "Asociación La Nacional de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 58.0,
+      "sell": 60.5,
+      "spread": 2.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
+    },
+    {
+      "bank": "Asociación Popular de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 57.5,
+      "sell": 60.5,
+      "spread": 3.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
+    },
+    {
+      "bank": "Banco Unión",
+      "currency": "USD",
+      "buy": 58.5,
+      "sell": 60.75,
+      "spread": 2.25,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
