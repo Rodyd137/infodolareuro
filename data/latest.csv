@@ -1,6 +1,6 @@
 bank,currency,buy,sell,spread,as_of_local,source,logo_url
 Banco Caribe,USD,58.25,60.25,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png
-Bonanza Banco,USD,58.7,60.5,1.8,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
+Bonanza Banco,USD,59.0,60.75,1.75,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
 Banco Unión,USD,58.5,60.75,2.25,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-union.svg
 Banreservas,USD,57.75,60.75,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banreservas.svg
 Banco BHD,USD,57.05,60.8,3.75,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
@@ -10,8 +10,8 @@ Banesco,USD,57.5,60.85,3.35,,https://www.infodolar.com.do/,https://www.infodolar
 Asociación Cibao de Ahorros y Préstamos,USD,59.0,60.9,1.9,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
 Asociación La Nacional de Ahorros y Préstamos,USD,59.0,60.9,1.9,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/alnap-2x.png
 Banco Unión,EUR,67.0,69.5,2.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-union.svg
-Asociación Cibao de Ahorros y Préstamos,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/cibao.svg
 Banco BHD,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
+Asociación Cibao de Ahorros y Préstamos,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/cibao.svg
 Banesco,EUR,65.1,70.0,4.9,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banesco-2x.png
 Banco Caribe,EUR,66.0,70.0,4.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png
 Asociación Popular de Ahorros y Préstamos,EUR,66.0,70.0,4.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/apap-2x.png
