@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-29T21:04:44Z",
+  "generated_at_utc": "2026-06-29T22:33:58Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -54,16 +54,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
-      "bank": "Asociación Popular de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 58.0,
-      "sell": 60.8,
-      "spread": 2.8,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
-    },
-    {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 58.25,
@@ -72,6 +62,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
+    },
+    {
+      "bank": "Asociación Popular de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 58.0,
+      "sell": 60.8,
+      "spread": 2.8,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
     },
     {
       "bank": "Banesco",
@@ -102,16 +102,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
-    },
-    {
-      "bank": "Banco Lafise",
-      "currency": "EUR",
-      "buy": 66.55,
-      "sell": 69.5,
-      "spread": 2.95,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Banco Unión",
@@ -182,6 +172,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
+      "bank": "Banco Lafise",
+      "currency": "EUR",
+      "buy": 66.55,
+      "sell": 71.45,
+      "spread": 4.9,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Caribe Express",
