@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-01T22:12:33Z",
+  "generated_at_utc": "2026-07-01T23:49:20Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -196,7 +196,7 @@
     {
       "bank": "Caribe Express",
       "currency": "EUR",
-      "buy": 66.5,
+      "buy": 66.2,
       "sell": null,
       "spread": null,
       "as_of_local": null,
