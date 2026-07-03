@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-03T16:18:55Z",
+  "generated_at_utc": "2026-07-03T17:54:08Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -134,16 +134,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
-      "bank": "Banco Lafise",
-      "currency": "EUR",
-      "buy": 65.55,
-      "sell": 70.0,
-      "spread": 4.45,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
       "bank": "Banesco",
       "currency": "EUR",
       "buy": 65.1,
@@ -172,6 +162,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
+    },
+    {
+      "bank": "Banco Lafise",
+      "currency": "EUR",
+      "buy": 65.55,
+      "sell": 70.45,
+      "spread": 4.9,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Banreservas",
