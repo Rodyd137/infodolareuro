@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-06T19:45:45Z",
+  "generated_at_utc": "2026-07-06T21:21:31Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -54,6 +54,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png"
     },
     {
+      "bank": "Asociación Popular de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 58.0,
+      "sell": 60.8,
+      "spread": 2.8,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
+    },
+    {
       "bank": "Banco Lafise",
       "currency": "USD",
       "buy": 57.5,
@@ -72,16 +82,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
-    },
-    {
-      "bank": "Asociación Popular de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 58.0,
-      "sell": 60.8,
-      "spread": 2.8,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
     },
     {
       "bank": "Banesco",
@@ -104,6 +104,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
+      "bank": "Banco Lafise",
+      "currency": "EUR",
+      "buy": 67.5,
+      "sell": 69.4,
+      "spread": 1.9,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
+    },
+    {
       "bank": "Banco Unión",
       "currency": "EUR",
       "buy": 66.5,
@@ -112,6 +122,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
+    },
+    {
+      "bank": "Asociación Popular de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 66.0,
+      "sell": 70.0,
+      "spread": 4.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -152,26 +172,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png"
-    },
-    {
-      "bank": "Asociación Popular de Ahorros y Préstamos",
-      "currency": "EUR",
-      "buy": 66.0,
-      "sell": 70.0,
-      "spread": 4.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
-    },
-    {
-      "bank": "Banco Lafise",
-      "currency": "EUR",
-      "buy": 67.5,
-      "sell": 70.45,
-      "spread": 2.95,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Banreservas",
