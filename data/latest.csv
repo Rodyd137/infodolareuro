@@ -1,6 +1,6 @@
 bank,currency,buy,sell,spread,as_of_local,source,logo_url
 Banco Unión,USD,57.9,59.9,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-union.svg
-Bonanza Banco,USD,58.5,60.5,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
+Bonanza Banco,USD,58.0,60.5,2.5,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
 Asociación Cibao de Ahorros y Préstamos,USD,57.5,60.75,3.25,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
 Banco Caribe,USD,57.75,60.75,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-caribe-2x.png
 Banreservas,USD,57.75,60.75,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banreservas.svg
@@ -24,6 +24,6 @@ Caribe Express,CHF,70.0,,,,https://caribeexpress.com.do/,https://caribeexpress.c
 Caribe Express,CAD,40.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
 Banco Vimenca,USD,57.75,60.7,2.95,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
 Banco Vimenca,EUR,65.3,69.95,4.65,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,CAD,39.05,43.4,4.35,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,CHF,70.15,75.7,5.55,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,GBP,75.4,81.0,5.6,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,CAD,39.1,43.4,4.3,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,CHF,70.3,75.7,5.4,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,GBP,75.5,81.0,5.5,20260709,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
