@@ -1,11 +1,11 @@
 bank,currency,buy,sell,spread,as_of_local,source,logo_url
 Asociación Cibao de Ahorros y Préstamos,USD,57.5,60.25,2.75,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
 Banreservas,USD,57.25,60.25,3.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banreservas.svg
+Banco Lafise,USD,57.2,60.5,3.3,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
 Bonanza Banco,USD,58.0,60.5,2.5,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
 Asociación Popular de Ahorros y Préstamos,USD,57.05,60.5,3.45,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/apap-2x.png
 Banco BHD,USD,56.65,60.6,3.95,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
-Banco Lafise,USD,57.5,60.8,3.3,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
-Banco Lafise,EUR,64.85,69.75,4.9,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
+Banco Lafise,EUR,64.5,69.4,4.9,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
 Banco BHD,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
 Asociación Cibao de Ahorros y Préstamos,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/cibao.svg
 Asociación Popular de Ahorros y Préstamos,EUR,66.0,70.0,4.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/apap-2x.png
@@ -15,8 +15,8 @@ Caribe Express,EUR,66.25,,,,https://caribeexpress.com.do/,https://caribeexpress.
 Caribe Express,GBP,74.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
 Caribe Express,CHF,70.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
 Caribe Express,CAD,40.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
-Banco Vimenca,USD,57.75,60.6,2.85,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,EUR,65.3,69.95,4.65,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,USD,57.75,60.4,2.65,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,EUR,65.3,69.8,4.5,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
 Banco Vimenca,CAD,39.15,43.4,4.25,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
 Banco Vimenca,CHF,70.3,75.7,5.4,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
 Banco Vimenca,GBP,75.6,81.0,5.4,20260715,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
