@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-16T21:56:12Z",
+  "generated_at_utc": "2026-07-16T22:51:51Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -74,16 +74,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "USD",
-      "buy": 56.65,
-      "sell": 60.6,
-      "spread": 3.95,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
-    },
-    {
       "bank": "Banesco",
       "currency": "USD",
       "buy": 56.8,
@@ -92,6 +82,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "USD",
+      "buy": 56.65,
+      "sell": 60.6,
+      "spread": 3.95,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
       "bank": "Banco Lafise",
@@ -124,16 +124,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "EUR",
-      "buy": 65.5,
-      "sell": 70.0,
-      "spread": 4.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 65.5,
@@ -142,6 +132,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banco BHD",
+      "currency": "EUR",
+      "buy": 65.5,
+      "sell": 70.0,
+      "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
       "bank": "Asociación Popular de Ahorros y Préstamos",
