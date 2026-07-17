@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-17T12:39:30Z",
+  "generated_at_utc": "2026-07-17T14:24:43Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -14,16 +14,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 57.0,
-      "sell": 60.25,
-      "spread": 3.25,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
-    },
-    {
       "bank": "Banreservas",
       "currency": "USD",
       "buy": 57.0,
@@ -32,6 +22,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 57.0,
+      "sell": 60.25,
+      "spread": 3.25,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
@@ -96,9 +96,9 @@
     {
       "bank": "Banco Lafise",
       "currency": "EUR",
-      "buy": 64.5,
-      "sell": 66.7,
-      "spread": 2.2,
+      "buy": 66.7,
+      "sell": 69.4,
+      "spread": 2.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
