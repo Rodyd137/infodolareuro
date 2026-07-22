@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-22T14:31:14Z",
+  "generated_at_utc": "2026-07-22T16:14:07Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -34,6 +34,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
+      "bank": "Banreservas",
+      "currency": "USD",
+      "buy": 56.5,
+      "sell": 60.0,
+      "spread": 3.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 56.6,
@@ -62,16 +72,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
-    },
-    {
-      "bank": "Banreservas",
-      "currency": "USD",
-      "buy": 57.0,
-      "sell": 60.25,
-      "spread": 3.25,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Banco Lafise",
@@ -107,8 +107,8 @@
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 64.5,
-      "sell": 69.45,
-      "spread": 4.95,
+      "sell": 69.4,
+      "spread": 4.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -122,6 +122,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Banreservas",
+      "currency": "EUR",
+      "buy": 64.5,
+      "sell": 70.0,
+      "spread": 5.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -152,16 +162,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/apap-2x.png"
-    },
-    {
-      "bank": "Banreservas",
-      "currency": "EUR",
-      "buy": 65.5,
-      "sell": 71.0,
-      "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
       "bank": "Caribe Express",
