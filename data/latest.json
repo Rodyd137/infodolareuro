@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-05T18:00:19Z",
+  "generated_at_utc": "2026-08-05T19:40:58Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -64,6 +64,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 56.5,
+      "sell": 59.9,
+      "spread": 3.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
       "bank": "Banco Lafise",
       "currency": "USD",
       "buy": 56.7,
@@ -72,16 +82,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 56.8,
-      "sell": 60.0,
-      "spread": 3.2,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Banco BHD",
