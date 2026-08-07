@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-07T00:20:37Z",
+  "generated_at_utc": "2026-08-07T23:01:56Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -84,16 +84,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
-      "bank": "Banco BHD",
-      "currency": "EUR",
-      "buy": 64.0,
-      "sell": 69.0,
-      "spread": 5.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
-    },
-    {
       "bank": "Banco Unión",
       "currency": "EUR",
       "buy": 65.0,
@@ -104,24 +94,24 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
-      "bank": "Banco Lafise",
+      "bank": "Banco BHD",
       "currency": "EUR",
-      "buy": 67.25,
-      "sell": 69.5,
-      "spread": 2.25,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "EUR",
-      "buy": 64.5,
-      "sell": 69.5,
+      "buy": 64.0,
+      "sell": 69.0,
       "spread": 5.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Banco Lafise",
+      "currency": "EUR",
+      "buy": 64.6,
+      "sell": 69.5,
+      "spread": 4.9,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Banreservas",
@@ -132,6 +122,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 65.0,
+      "sell": 70.0,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banesco",
@@ -199,17 +199,17 @@
       "buy": 57.5,
       "sell": 59.8,
       "spread": 2.3,
-      "as_of_local": "20260806",
+      "as_of_local": "20260807",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
     {
       "bank": "Banco Vimenca",
       "currency": "EUR",
-      "buy": 65.0,
-      "sell": 68.6,
-      "spread": 3.6,
-      "as_of_local": "20260806",
+      "buy": 65.25,
+      "sell": 68.7,
+      "spread": 3.45,
+      "as_of_local": "20260807",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -219,17 +219,17 @@
       "buy": 38.7,
       "sell": 42.9,
       "spread": 4.2,
-      "as_of_local": "20260806",
+      "as_of_local": "20260807",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
     {
       "bank": "Banco Vimenca",
       "currency": "CHF",
-      "buy": 68.45,
+      "buy": 68.4,
       "sell": 73.8,
-      "spread": 5.35,
-      "as_of_local": "20260806",
+      "spread": 5.4,
+      "as_of_local": "20260807",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -239,7 +239,7 @@
       "buy": 74.6,
       "sell": 80.1,
       "spread": 5.5,
-      "as_of_local": "20260806",
+      "as_of_local": "20260807",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
