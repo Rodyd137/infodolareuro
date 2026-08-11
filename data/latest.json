@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-11T18:47:41Z",
+  "generated_at_utc": "2026-08-11T19:54:24Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -44,16 +44,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
-      "bank": "Bonanza Banco",
-      "currency": "USD",
-      "buy": 57.8,
-      "sell": 59.8,
-      "spread": 2.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
-    },
-    {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 56.8,
@@ -62,6 +52,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
+    },
+    {
+      "bank": "Bonanza Banco",
+      "currency": "USD",
+      "buy": 57.8,
+      "sell": 59.8,
+      "spread": 2.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
     },
     {
       "bank": "Banreservas",
