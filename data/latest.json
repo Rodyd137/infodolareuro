@@ -1,18 +1,8 @@
 {
-  "generated_at_utc": "2026-08-11T12:04:48Z",
+  "generated_at_utc": "2026-08-11T13:49:41Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
-    {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 57.5,
-      "sell": 59.5,
-      "spread": 2.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
-    },
     {
       "bank": "Banco Unión",
       "currency": "USD",
@@ -44,14 +34,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
-      "bank": "Asociación La Nacional de Ahorros y Préstamos",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 56.8,
       "sell": 59.8,
       "spread": 3.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Bonanza Banco",
@@ -62,6 +52,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
+    },
+    {
+      "bank": "Asociación La Nacional de Ahorros y Préstamos",
+      "currency": "USD",
+      "buy": 56.8,
+      "sell": 59.8,
+      "spread": 3.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
     },
     {
       "bank": "Banreservas",
@@ -84,16 +84,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
-      "bank": "Banco Lafise",
-      "currency": "EUR",
-      "buy": 64.6,
-      "sell": 68.9,
-      "spread": 4.3,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
       "bank": "Banco BHD",
       "currency": "EUR",
       "buy": 64.0,
@@ -114,14 +104,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-union.svg"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco Lafise",
       "currency": "EUR",
-      "buy": 65.0,
-      "sell": 70.0,
-      "spread": 5.0,
+      "buy": 64.6,
+      "sell": 69.5,
+      "spread": 4.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Banreservas",
@@ -132,6 +122,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "currency": "EUR",
+      "buy": 65.0,
+      "sell": 70.0,
+      "spread": 5.0,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Banesco",
