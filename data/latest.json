@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-12T19:33:15Z",
+  "generated_at_utc": "2026-08-12T20:32:46Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -64,16 +64,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 56.5,
-      "sell": 59.9,
-      "spread": 3.4,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 56.9,
@@ -82,6 +72,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 56.5,
+      "sell": 59.9,
+      "spread": 3.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Banco BHD",
@@ -124,16 +124,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
-      "bank": "Banesco",
-      "currency": "EUR",
-      "buy": 65.5,
-      "sell": 70.0,
-      "spread": 4.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 65.0,
@@ -142,6 +132,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "EUR",
+      "buy": 65.5,
+      "sell": 70.0,
+      "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Caribe Express",
