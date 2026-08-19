@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-19T18:59:43Z",
+  "generated_at_utc": "2026-08-19T19:27:43Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -46,22 +46,12 @@
     {
       "bank": "Banco Lafise",
       "currency": "USD",
-      "buy": 56.6,
+      "buy": 56.84,
       "sell": 59.9,
-      "spread": 3.3,
+      "spread": 3.06,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 56.5,
-      "sell": 59.9,
-      "spread": 3.4,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -72,6 +62,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 56.5,
+      "sell": 59.9,
+      "spread": 3.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
@@ -124,16 +124,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
-      "bank": "Banesco",
-      "currency": "EUR",
-      "buy": 65.5,
-      "sell": 70.0,
-      "spread": 4.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "EUR",
       "buy": 65.0,
@@ -142,6 +132,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "EUR",
+      "buy": 65.5,
+      "sell": 70.0,
+      "spread": 4.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Caribe Express",
