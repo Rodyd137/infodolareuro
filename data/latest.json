@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-27T05:51:38Z",
+  "generated_at_utc": "2026-08-27T17:07:16Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -107,8 +107,8 @@
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 65.5,
-      "sell": 70.4,
-      "spread": 4.9,
+      "sell": 71.4,
+      "spread": 5.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -146,7 +146,7 @@
     {
       "bank": "Caribe Express",
       "currency": "USD",
-      "buy": 57.75,
+      "buy": 58.0,
       "sell": null,
       "spread": null,
       "as_of_local": null,
@@ -199,7 +199,7 @@
       "buy": 57.7,
       "sell": 59.8,
       "spread": 2.1,
-      "as_of_local": "20260826",
+      "as_of_local": "20260827",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -209,7 +209,7 @@
       "buy": 65.5,
       "sell": 70.0,
       "spread": 4.5,
-      "as_of_local": "20260826",
+      "as_of_local": "20260827",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -217,9 +217,9 @@
       "bank": "Banco Vimenca",
       "currency": "CAD",
       "buy": 39.2,
-      "sell": 43.3,
-      "spread": 4.1,
-      "as_of_local": "20260826",
+      "sell": 43.1,
+      "spread": 3.9,
+      "as_of_local": "20260827",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -229,7 +229,7 @@
       "buy": 69.0,
       "sell": 73.1,
       "spread": 4.1,
-      "as_of_local": "20260826",
+      "as_of_local": "20260827",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -239,7 +239,7 @@
       "buy": 76.1,
       "sell": 80.5,
       "spread": 4.4,
-      "as_of_local": "20260826",
+      "as_of_local": "20260827",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
