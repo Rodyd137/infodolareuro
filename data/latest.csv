@@ -1,13 +1,13 @@
 bank,currency,buy,sell,spread,as_of_local,source,logo_url
-Banco Unión,USD,57.85,59.75,1.9,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-union.svg
-Bonanza Banco,USD,57.8,59.8,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
 Banco BHD,USD,56.0,59.8,3.8,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png
-Asociación Cibao de Ahorros y Préstamos,USD,57.5,59.9,2.4,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
+Banco Unión,USD,57.85,59.8,1.95,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-union.svg
+Bonanza Banco,USD,57.8,59.8,2.0,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png
 Banreservas,USD,56.4,59.9,3.5,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banreservas.svg
+Asociación Cibao de Ahorros y Préstamos,USD,57.5,59.9,2.4,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/cibao.svg
 Banesco,USD,56.5,59.9,3.4,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banesco-2x.png
 Asociación La Nacional de Ahorros y Préstamos,USD,57.0,59.9,2.9,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/alnap-2x.png
 Banco Lafise,USD,56.6,60.0,3.4,,https://www.infodolar.com.do/,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
-Banco Unión,EUR,66.25,69.75,3.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-union.svg
+Banco Unión,EUR,67.0,69.8,2.8,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-union.svg
 Banesco,EUR,65.5,70.0,4.5,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banesco-2x.png
 Banco Lafise,EUR,65.5,70.4,4.9,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png
 Asociación Cibao de Ahorros y Préstamos,EUR,66.0,71.0,5.0,,https://www.infodolar.com.do/precio-euro.aspx,https://www.infodolar.com.do/images/entidades/cibao.svg
@@ -18,8 +18,8 @@ Caribe Express,EUR,66.3,,,,https://caribeexpress.com.do/,https://caribeexpress.c
 Caribe Express,GBP,73.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
 Caribe Express,CHF,69.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
 Caribe Express,CAD,39.0,,,,https://caribeexpress.com.do/,https://caribeexpress.com.do/images/logotop.png
-Banco Vimenca,USD,57.7,59.9,2.2,20260902,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,EUR,65.5,70.0,4.5,20260902,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,CAD,39.4,43.1,3.7,20260902,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,CHF,68.6,73.1,4.5,20260902,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
-Banco Vimenca,GBP,75.85,80.5,4.65,20260902,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,USD,57.7,59.9,2.2,20260903,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,EUR,65.5,70.0,4.5,20260903,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,CAD,39.4,43.1,3.7,20260903,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,CHF,68.6,73.1,4.5,20260903,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
+Banco Vimenca,GBP,75.85,80.5,4.65,20260903,https://www.bancovimenca.com/,https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png
