@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T10:35:02Z",
+  "generated_at_utc": "2026-09-07T16:12:18Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -34,16 +34,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 56.5,
-      "sell": 59.9,
-      "spread": 3.4,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 57.0,
@@ -64,11 +54,21 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 56.5,
+      "sell": 59.9,
+      "spread": 3.4,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
       "bank": "Banco Lafise",
       "currency": "USD",
-      "buy": 56.6,
+      "buy": 56.7,
       "sell": 60.0,
-      "spread": 3.4,
+      "spread": 3.3,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -77,8 +77,8 @@
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 66.1,
-      "sell": 69.8,
-      "spread": 3.7,
+      "sell": 69.5,
+      "spread": 3.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -186,8 +186,8 @@
     {
       "bank": "Banco Vimenca",
       "currency": "EUR",
-      "buy": 66.0,
-      "sell": 70.0,
+      "buy": 66.2,
+      "sell": 70.2,
       "spread": 4.0,
       "as_of_local": "20260907",
       "source": "https://www.bancovimenca.com/",
