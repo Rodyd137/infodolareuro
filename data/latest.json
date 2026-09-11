@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-11T21:26:36Z",
+  "generated_at_utc": "2026-09-11T23:26:05Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -24,26 +24,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
-      "bank": "Banreservas",
-      "currency": "USD",
-      "buy": 56.4,
-      "sell": 59.9,
-      "spread": 3.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
-    },
-    {
-      "bank": "Banco Lafise",
-      "currency": "USD",
-      "buy": 56.6,
-      "sell": 59.9,
-      "spread": 3.3,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 57.0,
@@ -54,6 +34,16 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
     },
     {
+      "bank": "Banreservas",
+      "currency": "USD",
+      "buy": 56.4,
+      "sell": 59.9,
+      "spread": 3.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
+    },
+    {
       "bank": "Banesco",
       "currency": "USD",
       "buy": 56.5,
@@ -62,6 +52,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
+      "bank": "Banco Lafise",
+      "currency": "USD",
+      "buy": 56.6,
+      "sell": 59.9,
+      "spread": 3.3,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -122,56 +122,6 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
-    },
-    {
-      "bank": "Caribe Express",
-      "currency": "USD",
-      "buy": 58.25,
-      "sell": null,
-      "spread": null,
-      "as_of_local": null,
-      "source": "https://caribeexpress.com.do/",
-      "logo_url": "https://caribeexpress.com.do/images/logotop.png"
-    },
-    {
-      "bank": "Caribe Express",
-      "currency": "EUR",
-      "buy": 66.8,
-      "sell": null,
-      "spread": null,
-      "as_of_local": null,
-      "source": "https://caribeexpress.com.do/",
-      "logo_url": "https://caribeexpress.com.do/images/logotop.png"
-    },
-    {
-      "bank": "Caribe Express",
-      "currency": "GBP",
-      "buy": 74.0,
-      "sell": null,
-      "spread": null,
-      "as_of_local": null,
-      "source": "https://caribeexpress.com.do/",
-      "logo_url": "https://caribeexpress.com.do/images/logotop.png"
-    },
-    {
-      "bank": "Caribe Express",
-      "currency": "CHF",
-      "buy": 70.0,
-      "sell": null,
-      "spread": null,
-      "as_of_local": null,
-      "source": "https://caribeexpress.com.do/",
-      "logo_url": "https://caribeexpress.com.do/images/logotop.png"
-    },
-    {
-      "bank": "Caribe Express",
-      "currency": "CAD",
-      "buy": 40.0,
-      "sell": null,
-      "spread": null,
-      "as_of_local": null,
-      "source": "https://caribeexpress.com.do/",
-      "logo_url": "https://caribeexpress.com.do/images/logotop.png"
     },
     {
       "bank": "Banco Vimenca",
