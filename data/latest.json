@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T20:24:02Z",
+  "generated_at_utc": "2026-09-22T23:04:51Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -177,8 +177,8 @@
       "bank": "Banco Vimenca",
       "currency": "USD",
       "buy": 58.0,
-      "sell": 60.0,
-      "spread": 2.0,
+      "sell": 60.15,
+      "spread": 2.15,
       "as_of_local": "20260922",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
