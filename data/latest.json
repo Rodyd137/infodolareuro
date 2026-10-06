@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-06T06:43:12Z",
+  "generated_at_utc": "2026-10-06T13:47:09Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -14,20 +14,10 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
-      "bank": "Bonanza Banco",
-      "currency": "USD",
-      "buy": 60.0,
-      "sell": 61.1,
-      "spread": 1.1,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
-    },
-    {
       "bank": "Banreservas",
       "currency": "USD",
-      "buy": 57.6,
-      "sell": 61.1,
+      "buy": 57.85,
+      "sell": 61.35,
       "spread": 3.5,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
@@ -52,6 +42,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Bonanza Banco",
+      "currency": "USD",
+      "buy": 60.1,
+      "sell": 61.45,
+      "spread": 1.35,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
     },
     {
       "bank": "Banco Lafise",
@@ -179,7 +179,7 @@
       "buy": 59.15,
       "sell": 61.4,
       "spread": 2.25,
-      "as_of_local": "20261005",
+      "as_of_local": "20261006",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -189,7 +189,7 @@
       "buy": 66.0,
       "sell": 69.7,
       "spread": 3.7,
-      "as_of_local": "20261005",
+      "as_of_local": "20261006",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -199,7 +199,7 @@
       "buy": 38.6,
       "sell": 43.1,
       "spread": 4.5,
-      "as_of_local": "20261005",
+      "as_of_local": "20261006",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -209,7 +209,7 @@
       "buy": 67.9,
       "sell": 72.9,
       "spread": 5.0,
-      "as_of_local": "20261005",
+      "as_of_local": "20261006",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -219,7 +219,7 @@
       "buy": 74.65,
       "sell": 80.3,
       "spread": 5.65,
-      "as_of_local": "20261005",
+      "as_of_local": "20261006",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
