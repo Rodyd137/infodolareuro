@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-12T06:14:12Z",
+  "generated_at_utc": "2026-10-12T15:49:10Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -24,14 +24,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banreservas.svg"
     },
     {
-      "bank": "Banco Lafise",
+      "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
-      "buy": 58.6,
+      "buy": 59.9,
       "sell": 61.9,
-      "spread": 3.3,
+      "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
       "bank": "Bonanza Banco",
@@ -54,14 +54,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
-      "bank": "Asociación Cibao de Ahorros y Préstamos",
+      "bank": "Banco Lafise",
       "currency": "USD",
-      "buy": 59.9,
-      "sell": 61.95,
-      "spread": 2.05,
+      "buy": 58.6,
+      "sell": 61.9,
+      "spread": 3.3,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
@@ -77,8 +77,8 @@
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 66.1,
-      "sell": 69.8,
-      "spread": 3.7,
+      "sell": 71.0,
+      "spread": 4.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -176,9 +176,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "USD",
-      "buy": 59.85,
+      "buy": 59.75,
       "sell": 61.9,
-      "spread": 2.05,
+      "spread": 2.15,
       "as_of_local": "20261012",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -196,9 +196,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "CAD",
-      "buy": 39.15,
+      "buy": 39.3,
       "sell": 43.7,
-      "spread": 4.55,
+      "spread": 4.4,
       "as_of_local": "20261012",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -206,9 +206,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "CHF",
-      "buy": 69.3,
+      "buy": 69.15,
       "sell": 74.6,
-      "spread": 5.3,
+      "spread": 5.45,
       "as_of_local": "20261012",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -216,9 +216,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "GBP",
-      "buy": 76.3,
+      "buy": 76.35,
       "sell": 82.0,
-      "spread": 5.7,
+      "spread": 5.65,
       "as_of_local": "20261012",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
