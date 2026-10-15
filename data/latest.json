@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-15T07:36:50Z",
+  "generated_at_utc": "2026-10-15T12:57:17Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -34,16 +34,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
     },
     {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 58.0,
-      "sell": 61.9,
-      "spread": 3.9,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 59.95,
@@ -52,6 +42,26 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
+    },
+    {
+      "bank": "Banco Lafise",
+      "currency": "USD",
+      "buy": 58.65,
+      "sell": 61.95,
+      "spread": 3.3,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 58.65,
+      "sell": 61.95,
+      "spread": 3.3,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
@@ -65,20 +75,10 @@
     },
     {
       "bank": "Banco Lafise",
-      "currency": "USD",
-      "buy": 58.65,
-      "sell": 61.95,
-      "spread": 3.3,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 66.1,
-      "sell": 69.8,
-      "spread": 3.7,
+      "sell": 71.0,
+      "spread": 4.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -179,7 +179,7 @@
       "buy": 59.75,
       "sell": 61.9,
       "spread": 2.15,
-      "as_of_local": "20261014",
+      "as_of_local": "20261015",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -189,7 +189,7 @@
       "buy": 66.5,
       "sell": 70.5,
       "spread": 4.0,
-      "as_of_local": "20261014",
+      "as_of_local": "20261015",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -199,7 +199,7 @@
       "buy": 39.2,
       "sell": 43.7,
       "spread": 4.5,
-      "as_of_local": "20261014",
+      "as_of_local": "20261015",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -209,7 +209,7 @@
       "buy": 69.0,
       "sell": 74.6,
       "spread": 5.6,
-      "as_of_local": "20261014",
+      "as_of_local": "20261015",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -219,7 +219,7 @@
       "buy": 76.15,
       "sell": 82.0,
       "spread": 5.85,
-      "as_of_local": "20261014",
+      "as_of_local": "20261015",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
