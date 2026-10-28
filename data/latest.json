@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-28T01:55:20Z",
+  "generated_at_utc": "2026-10-28T07:44:32Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -31,7 +31,7 @@
       "spread": 1.9,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco.png"
     },
     {
       "bank": "Banreservas",
