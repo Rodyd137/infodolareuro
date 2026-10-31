@@ -43,18 +43,18 @@ export function StoreProvider({ children }) {
     }),
     setCart: (cart) => update((d) => ({ ...d, cart })),
 
-    placeOrder: ({ day, payment, note }) => {
+    placeOrder: ({ day, deliveryDate, payment, note }) => {
       const d = dbRef.current;
       const items = Object.entries(d.cart).map(([id, qty]) => {
         const p = productById(id);
-        return { id, name: p.name, qty, price: p.price };
+        return { id, name: `${p.name} ${p.size}`, qty, price: p.price };
       });
       const created = {
         id: nextId('PED', d.orders),
         client: { ...d.session },
         items,
         total: items.reduce((s, i) => s + i.price * i.qty, 0),
-        day, payment, note,
+        day, deliveryDate, payment, note,
         status: 'pendiente',
         createdAt: now(),
         history: [{ status: 'pendiente', at: now() }],
@@ -95,3 +95,20 @@ export function StoreProvider({ children }) {
 }
 
 export const useStore = () => useContext(Ctx);
+
+// "Lo de siempre": el último pedido del negocio o, si es nuevo, el sugerido por la distribuidora.
+export function usualOrder(db) {
+  const last = db.orders.find((o) => o.client.code === db.session.code && o.status !== 'cancelado');
+  if (last) {
+    const cart = {};
+    last.items.forEach((i) => { if (productById(i.id)) cart[i.id] = i.qty; });
+    return cart;
+  }
+  return { ...(db.session.usual || {}) };
+}
+
+// Última forma de pago usada (para no volver a preguntarla).
+export function lastPayment(db) {
+  const last = db.orders.find((o) => o.client.code === db.session.code);
+  return last ? last.payment : null;
+}

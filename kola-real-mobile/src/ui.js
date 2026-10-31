@@ -1,6 +1,7 @@
 // Componentes compartidos del sistema de diseño.
-import React from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { C, R, T, shadow } from './theme';
 import { fmtDate } from './data';
@@ -99,7 +100,7 @@ export function StatusPill({ status, size = 'md' }) {
 
 export function Chips({ options, value, onChange }) {
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0 }} contentContainerStyle={{ gap: 8, paddingHorizontal: 20 }}>
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, flexShrink: 0, minHeight: 40 }} contentContainerStyle={{ gap: 8, paddingHorizontal: 20, alignItems: 'center' }}>
       {options.map((o) => {
         const active = o === value;
         return (
@@ -131,7 +132,7 @@ export function Segmented({ options, value, onChange, style }) {
   );
 }
 
-export function Stepper({ value, onChange, compact, wide }) {
+export function Stepper({ value, onChange, compact, wide, onTapValue }) {
   if (!value) {
     return (
       <Pressable onPress={() => onChange(1)} accessibilityRole="button" accessibilityLabel="Agregar"
@@ -145,7 +146,9 @@ export function Stepper({ value, onChange, compact, wide }) {
       <Pressable onPress={() => onChange(value - 1)} accessibilityLabel="Quitar uno" hitSlop={6} style={st.stepBtn}>
         <Ionicons name={value === 1 ? 'trash-outline' : 'remove'} size={18} color="#fff" />
       </Pressable>
-      <Text style={st.stepVal}>{value}</Text>
+      <Pressable onPress={onTapValue} disabled={!onTapValue} accessibilityLabel={`Cantidad ${value}. Toca para escribir`} hitSlop={4}>
+        <Text style={[st.stepVal, onTapValue && st.stepValTap]}>{value}</Text>
+      </Pressable>
       <Pressable onPress={() => onChange(value + 1)} accessibilityLabel="Agregar uno" hitSlop={6} style={st.stepBtn}>
         <Ionicons name="add" size={18} color="#fff" />
       </Pressable>
@@ -236,7 +239,69 @@ export function Empty({ icon = 'file-tray-outline', title, text, action }) {
   );
 }
 
+// Hoja que sube desde abajo.
+export function Sheet({ visible, onClose, title, children }) {
+  const insets = useSafeAreaInsets();
+  return (
+    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
+      <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        <Pressable style={st.backdrop} onPress={onClose} accessibilityLabel="Cerrar" />
+        <View style={[st.sheet, { paddingBottom: 20 + insets.bottom }]}>
+          <View style={st.grabber} />
+          {!!title && (
+            <View style={st.sheetHead}>
+              <Text style={[T.title, { flex: 1 }]}>{title}</Text>
+              <Pressable onPress={onClose} style={st.sheetClose} accessibilityLabel="Cerrar" hitSlop={8}>
+                <Ionicons name="close" size={20} color={C.ink} />
+              </Pressable>
+            </View>
+          )}
+          <ScrollView keyboardShouldPersistTaps="handled" style={{ flexGrow: 0 }}>{children}</ScrollView>
+        </View>
+      </KeyboardAvoidingView>
+    </Modal>
+  );
+}
+
+// Escribir la cantidad directamente (más rápido que tocar "+" veinte veces).
+export function QtySheet({ product, value, onClose, onSave }) {
+  const [txt, setTxt] = useState('');
+  useEffect(() => { if (product) setTxt(value ? String(value) : ''); }, [product, value]);
+  const n = parseInt(txt, 10) || 0;
+  return (
+    <Sheet visible={!!product} onClose={onClose} title={product ? `${product.name} ${product.size}` : ''}>
+      <Text style={[T.body, { color: C.muted, marginBottom: 14 }]}>¿Cuántas pacas? ({product && product.pack})</Text>
+      <TextInput
+        value={txt}
+        onChangeText={(v) => setTxt(v.replace(/\D/g, '').slice(0, 3))}
+        keyboardType="number-pad"
+        autoFocus
+        selectTextOnFocus
+        style={st.qtyInput}
+        accessibilityLabel="Cantidad de pacas"
+      />
+      <View style={{ flexDirection: 'row', gap: 8, marginTop: 14 }}>
+        {[5, 10, 15, 20].map((q) => (
+          <Pressable key={q} onPress={() => setTxt(String(q))} style={[st.quick, n === q && { borderColor: C.ink, backgroundColor: C.ink }]}>
+            <Text style={[T.bodyStrong, n === q && { color: '#fff' }]}>{q}</Text>
+          </Pressable>
+        ))}
+      </View>
+      <Button title={n ? `Poner ${n} paca${n === 1 ? '' : 's'}` : 'Quitar del pedido'} variant={n ? 'primary' : 'secondary'}
+        style={{ marginTop: 20 }} onPress={() => onSave(n)} />
+    </Sheet>
+  );
+}
+
 export const st = StyleSheet.create({
+  backdrop: { flex: 1, backgroundColor: '#00000066' },
+  sheet: { backgroundColor: C.bg, borderTopLeftRadius: R.xl, borderTopRightRadius: R.xl, paddingHorizontal: 20, paddingTop: 10, maxHeight: '90%' },
+  grabber: { width: 40, height: 5, borderRadius: 3, backgroundColor: '#D5D5DD', alignSelf: 'center', marginBottom: 12 },
+  sheetHead: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 6 },
+  sheetClose: { width: 36, height: 36, borderRadius: 18, backgroundColor: C.graySoft, alignItems: 'center', justifyContent: 'center' },
+  qtyInput: { height: 72, borderRadius: R.md, backgroundColor: C.surface, borderWidth: 1.5, borderColor: C.ink, textAlign: 'center', fontSize: 34, fontWeight: '800', color: C.ink, outlineStyle: 'none' },
+  quick: { flex: 1, height: 46, borderRadius: R.sm, borderWidth: 1, borderColor: C.line, backgroundColor: C.surface, alignItems: 'center', justifyContent: 'center' },
+  stepValTap: { textDecorationLine: 'underline', textDecorationStyle: 'dotted' },
   screen: { flex: 1, backgroundColor: C.bg },
   pad: { paddingHorizontal: 20 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 20, paddingTop: 12, paddingBottom: 14 },

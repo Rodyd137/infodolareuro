@@ -37,7 +37,7 @@ export function OrderItem({ order: o, showClient, actions, defaultOpen }) {
             </View>
           ))}
           <View style={s.meta}>
-            <Meta icon="calendar-outline" text={o.day} />
+            <Meta icon="calendar-outline" text={`Entrega: ${o.day}`} />
             <Meta icon="wallet-outline" text={o.payment} />
             {!!o.note && <Meta icon="chatbubble-ellipses-outline" text={o.note} />}
           </View>

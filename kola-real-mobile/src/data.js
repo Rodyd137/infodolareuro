@@ -23,31 +23,82 @@ export const PRODUCTS = [
   { id: 'cifrut-500', name: 'Cifrut', size: '500 ml', pack: 'Paca de 12', cat: 'Jugos', price: 480, color: '#FF7A00', kind: 'bottle' },
 ];
 
-// icon: nombre en MaterialCommunityIcons
+// icon: nombre en MaterialCommunityIcons.
+// urgent: el problema se marca urgente automáticamente (el dueño no tiene que decidirlo).
 export const EQUIPMENT = [
-  { id: 'freezer', name: 'Freezer o nevera', icon: 'fridge-outline',
-    problems: ['No enfría', 'No enciende', 'Hace mucho ruido', 'Bota agua / gotea', 'Puerta o goma dañada', 'Luz interna no sirve'] },
-  { id: 'letrero', name: 'Letrero', icon: 'billboard',
-    problems: ['Luz apagada / no enciende', 'Dañado o roto', 'Se está cayendo', 'Desteñido', 'Necesito uno nuevo'] },
-  { id: 'exhibidor', name: 'Exhibidor o rack', icon: 'bookshelf',
-    problems: ['Roto o doblado', 'Le falta una pieza', 'Necesito uno nuevo'] },
-  { id: 'toldo', name: 'Toldo o sombrilla', icon: 'umbrella-beach-outline',
-    problems: ['Roto', 'Desteñido', 'Necesito uno nuevo'] },
-  { id: 'mesas', name: 'Mesas y sillas', icon: 'table-chair',
-    problems: ['Están rotas', 'Faltan unidades', 'Necesito más'] },
-  { id: 'otro', name: 'Otro', icon: 'help-circle-outline', problems: ['Otro problema'] },
+  { id: 'freezer', name: 'Freezer o nevera', icon: 'fridge-outline', problems: [
+    { label: 'No enfría', icon: 'thermometer-alert', urgent: true },
+    { label: 'No enciende', icon: 'power-plug-off-outline', urgent: true },
+    { label: 'Bota agua', icon: 'water-alert-outline' },
+    { label: 'Hace mucho ruido', icon: 'volume-high' },
+    { label: 'Puerta o goma dañada', icon: 'door-closed' },
+    { label: 'Luz no sirve', icon: 'lightbulb-off-outline' },
+  ] },
+  { id: 'letrero', name: 'Letrero', icon: 'billboard', problems: [
+    { label: 'No prende', icon: 'lightbulb-off-outline' },
+    { label: 'Se está cayendo', icon: 'alert-outline', urgent: true },
+    { label: 'Roto o dañado', icon: 'image-broken-variant' },
+    { label: 'Desteñido', icon: 'palette-outline' },
+  ] },
+  { id: 'exhibidor', name: 'Exhibidor', icon: 'bookshelf', problems: [
+    { label: 'Roto o doblado', icon: 'image-broken-variant' },
+    { label: 'Le falta una pieza', icon: 'puzzle-outline' },
+  ] },
+  { id: 'toldo', name: 'Toldo o sombrilla', icon: 'umbrella-beach-outline', problems: [
+    { label: 'Roto', icon: 'image-broken-variant' },
+    { label: 'Desteñido', icon: 'palette-outline' },
+  ] },
+  { id: 'mesas', name: 'Mesas y sillas', icon: 'table-chair', problems: [
+    { label: 'Rotas', icon: 'image-broken-variant' },
+    { label: 'Faltan unidades', icon: 'numeric-negative-1' },
+  ] },
+  { id: 'otro', name: 'Otro equipo', icon: 'help-circle-outline', problems: [
+    { label: 'Necesito equipo nuevo', icon: 'plus-circle-outline' },
+    { label: 'Otro problema', icon: 'dots-horizontal-circle-outline' },
+  ] },
 ];
 
-export const DELIVERY_DAYS = [
-  { value: 'Próxima visita de ruta', label: 'Próxima visita', sub: 'De la ruta' },
-  { value: 'Lo antes posible', label: 'Lo antes', sub: 'posible' },
-  { value: 'Lunes', label: 'Lunes', sub: '' },
-  { value: 'Martes', label: 'Martes', sub: '' },
-  { value: 'Miércoles', label: 'Miércoles', sub: '' },
-  { value: 'Jueves', label: 'Jueves', sub: '' },
-  { value: 'Viernes', label: 'Viernes', sub: '' },
-  { value: 'Sábado', label: 'Sábado', sub: '' },
-];
+// ---------- Perfil de ejemplo ----------
+// En producción: el teléfono identifica al negocio en el sistema de la distribuidora,
+// y de ahí salen su ruta, su vendedor, sus equipos instalados y su historial.
+export const DEMO_OTP = '123456';
+export function demoProfile(phone) {
+  return {
+    code: 'CLI-1001',
+    business: 'Colmado Don Pedro',
+    owner: 'Pedro',
+    phone,
+    address: 'C/ Duarte #45, Villa Mella',
+    seller: { name: 'Carlos Martínez', phone: '18090000001' },
+    visitDays: [2, 5], // martes y viernes
+    equipment: [
+      { asset: 'FRZ-00231', type: 'freezer', name: 'Freezer vertical', detail: '2 puertas · al lado del mostrador' },
+      { asset: 'LTR-0087', type: 'letrero', name: 'Letrero luminoso', detail: 'Fachada' },
+      { asset: 'EXH-0412', type: 'exhibidor', name: 'Exhibidor de pacas', detail: 'Entrada del local' },
+    ],
+    usual: { 'kr-roja-2l': 6, 'kr-roja-400': 4, 'kr-naranja-2l': 2, 'cielo-600': 3 },
+  };
+}
+
+const DAY_NAMES = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+const MONTHS_SHORT = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+// Próximas visitas de la ruta (a partir de mañana).
+export function nextVisits(visitDays, count = 3) {
+  const out = [];
+  const d = new Date();
+  for (let i = 1; out.length < count && i < 30; i++) {
+    const x = new Date(d.getFullYear(), d.getMonth(), d.getDate() + i);
+    if (visitDays.includes(x.getDay())) out.push(x);
+  }
+  return out;
+}
+export const fmtDay = (date) => {
+  const d = new Date(date);
+  return `${DAY_NAMES[d.getDay()]} ${d.getDate()} ${MONTHS_SHORT[d.getMonth()]}`;
+};
+export const cap = (t) => (t ? t.charAt(0).toUpperCase() + t.slice(1) : t);
+export const visitDaysText = (days) => days.map((n) => DAY_NAMES[n]).join(' y ');
 
 export const PAYMENT_METHODS = [
   { value: 'Efectivo al recibir', icon: 'cash', sub: 'Pagas cuando llegue el camión' },

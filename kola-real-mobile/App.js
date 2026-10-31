@@ -8,15 +8,15 @@ import { StoreProvider, useStore } from './src/store';
 import Login from './src/screens/Login';
 import Home from './src/screens/Home';
 import Shop from './src/screens/Shop';
-import Report from './src/screens/Report';
+import Equipment from './src/screens/Equipment';
 import Activity from './src/screens/Activity';
 import { AllOrders, AllReports, Summary } from './src/screens/Admin';
 
 const CLIENT_TABS = [
   { id: 'inicio', label: 'Inicio', icon: 'home', Screen: Home, light: true },
   { id: 'pedir', label: 'Pedir', icon: 'cart', Screen: Shop },
-  { id: 'reportar', label: 'Reportar', icon: 'construct', Screen: Report },
-  { id: 'actividad', label: 'Actividad', icon: 'receipt', Screen: Activity },
+  { id: 'equipos', label: 'Mis equipos', icon: 'construct', Screen: Equipment },
+  { id: 'historial', label: 'Pedidos', icon: 'receipt', Screen: Activity, hidden: true },
 ];
 const ADMIN_TABS = [
   { id: 'resumen', label: 'Resumen', icon: 'stats-chart', Screen: Summary },
@@ -45,7 +45,7 @@ function Main() {
   const openReports = db.reports.filter((r) => r.client.code === db.session.code && r.status !== 'resuelto').length;
   const pendingOrders = db.orders.filter((o) => o.status === 'pendiente').length;
   const adminOpen = db.reports.filter((r) => r.status === 'abierto').length;
-  const badges = { pedir: cartCount, actividad: openReports, 'admin-pedidos': pendingOrders, 'admin-reportes': adminOpen };
+  const badges = { pedir: cartCount, equipos: openReports, 'admin-pedidos': pendingOrders, 'admin-reportes': adminOpen };
   const { Screen } = current;
 
   return (
@@ -55,8 +55,8 @@ function Main() {
         <Screen key={current.id} goTo={goTo} params={nav.params} />
       </View>
       <SafeAreaView edges={['bottom']} style={st.tabbar}>
-        {tabs.map((t) => {
-          const active = t.id === current.id;
+        {tabs.filter((t) => !t.hidden).map((t) => {
+          const active = t.id === current.id || (current.hidden && t.id === 'inicio');
           const badge = badges[t.id];
           return (
             <Pressable key={t.id} onPress={() => goTo(t.id)} style={st.tab} accessibilityRole="tab" accessibilityState={{ selected: active }} accessibilityLabel={t.label}>
