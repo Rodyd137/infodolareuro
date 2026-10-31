@@ -1,3 +1,5 @@
+> **Nota:** la app para los clientes es la app móvil en [`../kola-real-mobile`](../kola-real-mobile) (iOS y Android). Esta versión web queda como demo rápida en el navegador.
+
 # Kola Real Negocios — Prototipo
 
 App para que los **negocios (colmados, bodegas, cafeterías, etc.) en República Dominicana**:

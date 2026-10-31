@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Kola Real Negocios",
+    "slug": "kola-real-negocios",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#c8102e"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "do.kolareal.negocios",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "do.kolareal.negocios",
+      "adaptiveIcon": {
+        "backgroundColor": "#c8102e",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app necesita acceso a tus fotos para adjuntarlas a los reportes de equipos.",
+          "cameraPermission": "La app necesita la cámara para tomar fotos de los equipos con problemas."
+        }
+      ]
+    ]
+  }
+}
