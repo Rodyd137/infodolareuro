@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es-DO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8102e">
+  <title>Kola Real Negocios</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de acceso -->
+  <section id="login" class="screen">
+    <div class="login-card">
+      <div class="logo">KR</div>
+      <h1>Kola Real Negocios</h1>
+      <p class="muted">Pide tus productos y reporta problemas con tus equipos.</p>
+      <form id="login-form">
+        <label>Código de cliente
+          <input name="code" required placeholder="Ej: CLI-1001" autocomplete="off">
+        </label>
+        <label>Nombre del negocio
+          <input name="business" required placeholder="Ej: Colmado Don Pedro">
+        </label>
+        <label>Teléfono / WhatsApp
+          <input name="phone" type="tel" required placeholder="809-000-0000">
+        </label>
+        <label>Rol
+          <select name="role">
+            <option value="cliente">Dueño de negocio</option>
+            <option value="admin">Distribuidor / Supervisor</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Entrar</button>
+      </form>
+      <p class="demo-note">Prototipo de demostración. Los datos se guardan solo en este dispositivo.</p>
+    </div>
+  </section>
+
+  <!-- App -->
+  <section id="app" class="screen hidden">
+    <header class="topbar">
+      <div>
+        <strong id="biz-name"></strong>
+        <div class="muted small" id="biz-code"></div>
+      </div>
+      <button class="btn ghost small" id="logout">Salir</button>
+    </header>
+
+    <main id="view"></main>
+
+    <nav class="tabbar" id="tabbar"></nav>
+  </section>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>

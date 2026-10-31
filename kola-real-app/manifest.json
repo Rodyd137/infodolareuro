@@ -1,0 +1,9 @@
+{
+  "name": "Kola Real Negocios (Prototipo)",
+  "short_name": "KR Negocios",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c8102e",
+  "lang": "es-DO"
+}
