@@ -8,7 +8,7 @@ App para los clientes de Kola Real en República Dominicana (colmados, bodegas, 
 - **Vista del distribuidor o supervisor**: resumen, cambio de estado de los pedidos, asignación de técnicos y CSV de reportes.
 - Copia del pedido o reporte por **WhatsApp**.
 
-Hecha con **Expo (React Native)**: un solo código para iOS y Android.
+Hecha con **Expo (React Native)**: un solo código para iOS y Android. Las botellas son ilustraciones vectoriales provisionales (`src/components/Bottle.js`); en producción se reemplazan por fotos oficiales.
 
 > ⚠️ Prototipo: los productos y precios son de ejemplo y los datos se guardan solo en el teléfono (AsyncStorage). Para producción hace falta un backend (ver abajo).
 
@@ -57,9 +57,13 @@ src/data.js             Catálogo, equipos, estados, colores
 src/store.js            Estado y acciones (aquí se conecta la API en producción)
 src/ui.js               Componentes compartidos
 src/screens/Login.js    Acceso
-src/screens/Client.js   Pedir, mis pedidos, reportar, mis reportes
+src/screens/Home.js     Inicio del negocio
+src/screens/Shop.js     Catálogo, carrito y confirmación
+src/screens/Report.js   Reporte de equipo en 3 pasos
+src/screens/Activity.js Pedidos y reportes del negocio
 src/screens/Admin.js    Resumen, pedidos y reportes para el distribuidor
-src/screens/cards.js    Tarjetas de pedido y reporte
+src/components/         Tarjetas de pedido/reporte e ilustración de productos
+src/theme.js            Colores, tipografía y sombras
 ```
 
 ## Siguientes pasos para producción

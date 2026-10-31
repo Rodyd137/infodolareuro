@@ -2,73 +2,74 @@ import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import { COLORS } from './src/data';
+import { Ionicons } from '@expo/vector-icons';
+import { C } from './src/theme';
 import { StoreProvider, useStore } from './src/store';
 import Login from './src/screens/Login';
-import { Catalog, MyOrders, MyReports, ReportForm } from './src/screens/Client';
+import Home from './src/screens/Home';
+import Shop from './src/screens/Shop';
+import Report from './src/screens/Report';
+import Activity from './src/screens/Activity';
 import { AllOrders, AllReports, Summary } from './src/screens/Admin';
 
 const CLIENT_TABS = [
-  { id: 'pedir', label: 'Pedir', ico: '🛒', Screen: Catalog },
-  { id: 'pedidos', label: 'Mis pedidos', ico: '📦', Screen: MyOrders },
-  { id: 'reportar', label: 'Reportar', ico: '🛠️', Screen: ReportForm },
-  { id: 'reportes', label: 'Mis reportes', ico: '📋', Screen: MyReports },
+  { id: 'inicio', label: 'Inicio', icon: 'home', Screen: Home, light: true },
+  { id: 'pedir', label: 'Pedir', icon: 'cart', Screen: Shop },
+  { id: 'reportar', label: 'Reportar', icon: 'construct', Screen: Report },
+  { id: 'actividad', label: 'Actividad', icon: 'receipt', Screen: Activity },
 ];
 const ADMIN_TABS = [
-  { id: 'resumen', label: 'Resumen', ico: '📊', Screen: Summary },
-  { id: 'admin-pedidos', label: 'Pedidos', ico: '📦', Screen: AllOrders },
-  { id: 'admin-reportes', label: 'Reportes', ico: '🛠️', Screen: AllReports },
+  { id: 'resumen', label: 'Resumen', icon: 'stats-chart', Screen: Summary },
+  { id: 'admin-pedidos', label: 'Pedidos', icon: 'cube', Screen: AllOrders },
+  { id: 'admin-reportes', label: 'Reportes', icon: 'construct', Screen: AllReports },
 ];
 
 function Main() {
-  const { db, ready, logout } = useStore();
-  const isAdmin = db.session && db.session.role === 'admin';
+  const { db, ready } = useStore();
+  const isAdmin = !!(db.session && db.session.role === 'admin');
   const tabs = isAdmin ? ADMIN_TABS : CLIENT_TABS;
-  const [tab, setTab] = useState(tabs[0].id);
+  const [nav, setNav] = useState({ tab: tabs[0].id, params: null });
+  const sessionKey = db.session ? `${db.session.code}:${db.session.role}` : '';
 
   // Al cambiar de usuario, volver a la primera pestaña de su rol.
-  useEffect(() => { setTab(tabs[0].id); }, [db.session && db.session.code, isAdmin]);
+  useEffect(() => { setNav({ tab: tabs[0].id, params: null }); }, [sessionKey]);
 
   if (!ready) {
-    return <View style={st.center}><ActivityIndicator color={COLORS.red} size="large" /></View>;
+    return <View style={st.center}><ActivityIndicator color={C.primary} size="large" /></View>;
   }
-  if (!db.session) return <Login />;
+  if (!db.session) return <><StatusBar style="light" /><Login /></>;
 
-  const current = tabs.find((t) => t.id === tab) || tabs[0];
+  const current = tabs.find((t) => t.id === nav.tab) || tabs[0];
+  const goTo = (tab, params = null) => setNav({ tab, params: params ? { ...params, _t: Date.now() } : null });
   const cartCount = Object.values(db.cart).reduce((a, b) => a + b, 0);
+  const openReports = db.reports.filter((r) => r.client.code === db.session.code && r.status !== 'resuelto').length;
+  const pendingOrders = db.orders.filter((o) => o.status === 'pendiente').length;
+  const adminOpen = db.reports.filter((r) => r.status === 'abierto').length;
+  const badges = { pedir: cartCount, actividad: openReports, 'admin-pedidos': pendingOrders, 'admin-reportes': adminOpen };
   const { Screen } = current;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.red }} edges={['top']}>
-      <View style={st.header}>
-        <View style={{ flex: 1 }}>
-          <Text style={st.headerTitle} numberOfLines={1}>{db.session.business}</Text>
-          <Text style={st.headerSub}>{isAdmin ? 'Distribuidor' : 'Cliente'} · {db.session.code}</Text>
-        </View>
-        <Pressable onPress={logout} style={st.logout} accessibilityRole="button">
-          <Text style={{ color: '#fff', fontWeight: '600' }}>Salir</Text>
-        </Pressable>
+    <View style={{ flex: 1, backgroundColor: C.bg }}>
+      <StatusBar style={current.light ? 'light' : 'dark'} />
+      <View style={{ flex: 1 }}>
+        <Screen key={current.id} goTo={goTo} params={nav.params} />
       </View>
-
-      <View style={{ flex: 1, backgroundColor: COLORS.bg }}>
-        <Screen key={current.id} goTo={setTab} />
-      </View>
-
       <SafeAreaView edges={['bottom']} style={st.tabbar}>
         {tabs.map((t) => {
           const active = t.id === current.id;
+          const badge = badges[t.id];
           return (
-            <Pressable key={t.id} onPress={() => setTab(t.id)} style={st.tab} accessibilityRole="tab" accessibilityState={{ selected: active }}>
-              <Text style={{ fontSize: 22 }}>{t.ico}</Text>
-              <Text style={[st.tabLabel, active && st.tabActive]}>{t.label}</Text>
-              {t.id === 'pedir' && cartCount > 0 && (
-                <View style={st.badge}><Text style={st.badgeText}>{cartCount}</Text></View>
-              )}
+            <Pressable key={t.id} onPress={() => goTo(t.id)} style={st.tab} accessibilityRole="tab" accessibilityState={{ selected: active }} accessibilityLabel={t.label}>
+              <View style={[st.tabIcon, active && st.tabIconActive]}>
+                <Ionicons name={active ? t.icon : `${t.icon}-outline`} size={22} color={active ? C.primary : C.muted} />
+                {!!badge && <View style={st.badge}><Text style={st.badgeText}>{badge > 99 ? '99+' : badge}</Text></View>}
+              </View>
+              <Text style={[st.tabLabel, active && st.tabLabelActive]}>{t.label}</Text>
             </Pressable>
           );
         })}
       </SafeAreaView>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -76,7 +77,6 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <StoreProvider>
-        <StatusBar style="light" />
         <Main />
       </StoreProvider>
     </SafeAreaProvider>
@@ -84,15 +84,13 @@ export default function App() {
 }
 
 const st = StyleSheet.create({
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.bg },
-  header: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingVertical: 12, backgroundColor: COLORS.red },
-  headerTitle: { color: '#fff', fontWeight: '800', fontSize: 17 },
-  headerSub: { color: '#ffd9de', fontSize: 13 },
-  logout: { borderWidth: 1, borderColor: '#fff', borderRadius: 10, paddingVertical: 6, paddingHorizontal: 12 },
-  tabbar: { flexDirection: 'row', backgroundColor: COLORS.card, borderTopWidth: 1, borderColor: COLORS.border },
-  tab: { flex: 1, alignItems: 'center', paddingVertical: 8 },
-  tabLabel: { fontSize: 12, color: COLORS.muted, marginTop: 2 },
-  tabActive: { color: COLORS.red, fontWeight: '700' },
-  badge: { position: 'absolute', top: 4, right: '22%', backgroundColor: COLORS.red, borderRadius: 10, paddingHorizontal: 6, minWidth: 18, alignItems: 'center' },
-  badgeText: { color: '#fff', fontSize: 11, fontWeight: '700' },
+  center: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: C.bg },
+  tabbar: { flexDirection: 'row', backgroundColor: C.surface, borderTopWidth: 1, borderColor: C.line, paddingTop: 6 },
+  tab: { flex: 1, alignItems: 'center', paddingBottom: 6 },
+  tabIcon: { width: 56, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  tabIconActive: { backgroundColor: C.primarySoft },
+  tabLabel: { fontSize: 11, color: C.muted, marginTop: 3, fontWeight: '600' },
+  tabLabelActive: { color: C.primary, fontWeight: '800' },
+  badge: { position: 'absolute', top: -2, right: 6, backgroundColor: C.primary, borderRadius: 9, minWidth: 18, height: 18, paddingHorizontal: 4, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: C.surface },
+  badgeText: { color: '#fff', fontSize: 10, fontWeight: '800' },
 });
