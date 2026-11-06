@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-06T12:18:23Z",
+  "generated_at_utc": "2026-11-06T19:35:23Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -67,8 +67,8 @@
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 66.05,
-      "sell": 70.95,
-      "spread": 4.9,
+      "sell": 68.5,
+      "spread": 2.45,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
@@ -156,9 +156,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "USD",
-      "buy": 59.8,
+      "buy": 59.6,
       "sell": 61.4,
-      "spread": 1.6,
+      "spread": 1.8,
       "as_of_local": "20261106",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -176,9 +176,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "CAD",
-      "buy": 39.6,
+      "buy": 39.4,
       "sell": 44.6,
-      "spread": 5.0,
+      "spread": 5.2,
       "as_of_local": "20261106",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -186,9 +186,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "CHF",
-      "buy": 69.2,
+      "buy": 69.0,
       "sell": 74.8,
-      "spread": 5.6,
+      "spread": 5.8,
       "as_of_local": "20261106",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
@@ -196,9 +196,9 @@
     {
       "bank": "Banco Vimenca",
       "currency": "GBP",
-      "buy": 76.7,
+      "buy": 76.5,
       "sell": 82.5,
-      "spread": 5.8,
+      "spread": 6.0,
       "as_of_local": "20261106",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
