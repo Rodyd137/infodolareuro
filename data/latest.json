@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T18:22:14Z",
+  "generated_at_utc": "2026-11-10T23:36:23Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -24,16 +24,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
-      "bank": "Banesco",
-      "currency": "USD",
-      "buy": 57.95,
-      "sell": 61.4,
-      "spread": 3.45,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
-    },
-    {
       "bank": "Bonanza Banco",
       "currency": "USD",
       "buy": 59.5,
@@ -44,14 +34,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
     },
     {
-      "bank": "Banco Lafise",
+      "bank": "Banesco",
       "currency": "USD",
-      "buy": 58.75,
-      "sell": 61.45,
-      "spread": 2.7,
+      "buy": 57.95,
+      "sell": 61.4,
+      "spread": 3.45,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Asociación La Nacional de Ahorros y Préstamos",
@@ -65,10 +55,20 @@
     },
     {
       "bank": "Banco Lafise",
+      "currency": "USD",
+      "buy": 58.75,
+      "sell": 61.45,
+      "spread": 2.7,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
+    },
+    {
+      "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 66.05,
-      "sell": 68.55,
-      "spread": 2.5,
+      "sell": 70.05,
+      "spread": 4.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
