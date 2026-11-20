@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-20T13:45:45Z",
+  "generated_at_utc": "2026-11-20T21:37:34Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -56,8 +56,8 @@
     {
       "bank": "Banco Lafise",
       "currency": "USD",
-      "buy": 58.75,
-      "sell": 61.45,
+      "buy": 58.55,
+      "sell": 61.25,
       "spread": 2.7,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
@@ -66,8 +66,8 @@
     {
       "bank": "Banco Lafise",
       "currency": "EUR",
-      "buy": 65.3,
-      "sell": 69.7,
+      "buy": 64.55,
+      "sell": 68.95,
       "spread": 4.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
