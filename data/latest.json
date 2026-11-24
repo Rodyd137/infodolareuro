@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-24T02:40:44Z",
+  "generated_at_utc": "2026-11-24T13:05:06Z",
   "as_of_local_usd": null,
   "as_of_local_eur": null,
   "items": [
@@ -14,16 +14,6 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/bonanza-banco-2x.png"
     },
     {
-      "bank": "Asociación La Nacional de Ahorros y Préstamos",
-      "currency": "USD",
-      "buy": 59.0,
-      "sell": 61.0,
-      "spread": 2.0,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
-    },
-    {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
       "currency": "USD",
       "buy": 59.0,
@@ -34,14 +24,14 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/cibao.svg"
     },
     {
-      "bank": "Banesco",
+      "bank": "Asociación La Nacional de Ahorros y Préstamos",
       "currency": "USD",
-      "buy": 57.75,
-      "sell": 61.2,
-      "spread": 3.45,
+      "buy": 59.0,
+      "sell": 61.0,
+      "spread": 2.0,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+      "logo_url": "https://www.infodolar.com.do/images/entidades/alnap-2x.png"
     },
     {
       "bank": "Banco BHD",
@@ -64,24 +54,24 @@
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
     },
     {
+      "bank": "Banesco",
+      "currency": "USD",
+      "buy": 57.95,
+      "sell": 61.4,
+      "spread": 3.45,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
+    },
+    {
       "bank": "Banco Lafise",
       "currency": "EUR",
       "buy": 64.55,
-      "sell": 67.2,
-      "spread": 2.65,
+      "sell": 68.95,
+      "spread": 4.4,
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-lafise-2x.png"
-    },
-    {
-      "bank": "Banesco",
-      "currency": "EUR",
-      "buy": 64.5,
-      "sell": 70.0,
-      "spread": 5.5,
-      "as_of_local": null,
-      "source": "https://www.infodolar.com.do/precio-euro.aspx",
-      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Asociación Cibao de Ahorros y Préstamos",
@@ -102,6 +92,16 @@
       "as_of_local": null,
       "source": "https://www.infodolar.com.do/precio-euro.aspx",
       "logo_url": "https://www.infodolar.com.do/images/entidades/banco-bhd-2x.png"
+    },
+    {
+      "bank": "Banesco",
+      "currency": "EUR",
+      "buy": 66.0,
+      "sell": 71.5,
+      "spread": 5.5,
+      "as_of_local": null,
+      "source": "https://www.infodolar.com.do/precio-euro.aspx",
+      "logo_url": "https://www.infodolar.com.do/images/entidades/banesco-2x.png"
     },
     {
       "bank": "Caribe Express",
@@ -159,7 +159,7 @@
       "buy": 58.75,
       "sell": 61.2,
       "spread": 2.45,
-      "as_of_local": "20261123",
+      "as_of_local": "20261124",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -169,7 +169,7 @@
       "buy": 64.8,
       "sell": 68.9,
       "spread": 4.1,
-      "as_of_local": "20261123",
+      "as_of_local": "20261124",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -179,7 +179,7 @@
       "buy": 38.7,
       "sell": 43.6,
       "spread": 4.9,
-      "as_of_local": "20261123",
+      "as_of_local": "20261124",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -189,7 +189,7 @@
       "buy": 67.85,
       "sell": 73.6,
       "spread": 5.75,
-      "as_of_local": "20261123",
+      "as_of_local": "20261124",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     },
@@ -199,7 +199,7 @@
       "buy": 75.4,
       "sell": 81.6,
       "spread": 6.2,
-      "as_of_local": "20261123",
+      "as_of_local": "20261124",
       "source": "https://www.bancovimenca.com/",
       "logo_url": "https://grupovimenca.com.do/wp-content/uploads/2025/08/BancoVimencaIcon.png"
     }
